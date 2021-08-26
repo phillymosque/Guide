@@ -1,0 +1,1516 @@
+2018-12-14 15:26:27 - Attempting to retrieve the root directory of the data partition.
+2018-12-14 15:26:28 - Found 5 handles that supported SimpleFileSystem
+2018-12-14 15:26:28 - Checking handle 0 (C80DE998)
+2018-12-14 15:26:28 - Handle is own partition
+2018-12-14 15:26:28 - Checking handle 1 (C80DE798)
+2018-12-14 15:26:28 - HD node found: MBR type(2), Signature type(2), Part #(2), Start LBA(514048), Num Sectors(509919)
+2018-12-14 15:26:28 - Self node: MBR type(2), Signature type(2), Part #(1), Start LBA(2048), Num Sectors(509953)
+2018-12-14 15:26:28 - Checking handle 2 (C7423398)
+2018-12-14 15:26:28 - Checking handle 3 (C7423A18)
+2018-12-14 15:26:29 - Checking handle 4 (C7414C98)
+2018-12-14 15:26:29 - Disabling watchdog timer (Result: Success)
+2018-12-14 15:26:29 - Could not find Simple Network protocol.
+2018-12-14 15:26:29 - =============================================
+2018-12-14 15:26:29 - MemTest86 V8.0 Free Build: 1000 (64-bit)
+2018-12-14 15:26:30 - =============================================
+2018-12-14 15:26:30 - SMBIOS BIOS INFO Vendor: "American Megatrends Inc.", Version: "4207", Release Date: "12/07/2018"
+2018-12-14 15:26:30 - SMBIOS SYSTEM INFO Manufacturer: "System manufacturer", Product: "System Product Name", Version: "System Version", S/N: "System Serial Number", SKU: "", Family: ""
+2018-12-14 15:26:30 - SMBIOS: Found SMBIOS BaseboardInformation (pbLinAddr=0xE6C27, FormattedLen=15, iTotalLen=117)
+2018-12-14 15:26:30 - SMBIOS BASEBOARD INFO Manufacturer: "ASUSTeK COMPUTER INC.", Product: "ROG STRIX B350-F GAMING", Version: "Rev X.0x", S/N: "180119092103886", AssetTag: "Default string", LocationInChassis: "Default string"
+2018-12-14 15:26:30 - EFI Specifications: 2.60
+2018-12-14 15:26:30 - Found blacklist file
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Mac-F42C88C8" (BIOS: "", FLAGS: 1) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Mac-F4238CC8" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Mac-27ADBB7B4CEE8E61" (BIOS: "", FLAGS: 20) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "80AF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z97MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170X-Gaming 3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170X-Gaming 7" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170X-Gaming GT" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170X-UD3-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "Z170-HD3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "990FXA-UD3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "970A-DS3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "X99-Ultra Gaming-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "M5A97 R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "M5A97 EVO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "M5A99FX PRO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "X99-A" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "X99-A/USB 3.1" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:26:30 - [BLACKLIST] Adding "X99-A II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "X99-A" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "Sabertooth X99" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "SABERTOOTH 990FX R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "STRIX X99 GAMING" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "X99-DELUXE" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "X99-DELUXE II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:26:31 - [BLACKLIST] Adding "RAMPAGE V EXTREME" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "MAXIMUS VIII RANGER" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "Z10PE-D8 WS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "X9DRW" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "X9DRW-3LN4F+/X9DRW-3TF+" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "X9SRL-F" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "X9DRD-iF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "151-BE-E097" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "131-HE-E095-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "151-HE-E999-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "PRIME B350-PLUS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:32 - [BLACKLIST] Adding "PRIME X370-PRO" (BIOS: "", FLAGS: 4) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "CROSSHAIR VI HERO" (BIOS: "1602", FLAGS: 4) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "ROG STRIX X370-F GAMING" (BIOS: "4012", FLAGS: 4) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "OEMSH Product" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "LNVNB161216" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "GA-990FX-GAMING" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] Adding "X399 SLI PLUS (MS-7B09)" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:26:33 - [BLACKLIST] 44 boards added to blacklist
+2018-12-14 15:26:33 - Console Control protocol workaround enabled
+2018-12-14 15:26:33 - Number of console modes: 4
+2018-12-14 15:26:33 - Mode 0: 80 x 25
+2018-12-14 15:26:33 - Mode 1: 80 x 50
+2018-12-14 15:26:33 - Mode 2: 100 x 31
+2018-12-14 15:26:33 - Mode 3: 320 x 56
+2018-12-14 15:26:33 - Initializing localization strings
+2018-12-14 15:26:34 - Language en-US is supported
+2018-12-14 15:26:34 - Language fr-FR is supported
+2018-12-14 15:26:34 - Language it-IT is supported
+2018-12-14 15:26:34 - Language es-AR is supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0x00C3 (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language pt-BR is not supported
+2018-12-14 15:26:34 - Language ca-ES is supported
+2018-12-14 15:26:34 - Language de-DE is supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0x010C (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language cs-CZ is not supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0x0104 (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language pl-PL is not supported
+2018-12-14 15:26:34 - Language ru-RU is supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0x3041 (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language ja-JP is not supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0x4E0F (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language zh-CN is not supported
+2018-12-14 15:26:34 - GetGlyph failed for character 0xF944 (Warning Unknown Glyph)
+2018-12-14 15:26:34 - Language zh-HK is not supported
+2018-12-14 15:26:34 - Font does not support all languages. Installing unicode font...
+2018-12-14 15:26:34 - InitFont - Font header version: 1.1
+2018-12-14 15:26:34 - InitFont - Number of narrow glyphs: 6969
+2018-12-14 15:26:34 - InitFont - Number of wide glyphs: 50117
+2018-12-14 15:26:35 - Language en-US is supported
+2018-12-14 15:26:35 - Language fr-FR is supported
+2018-12-14 15:26:36 - Language it-IT is supported
+2018-12-14 15:26:36 - Language es-AR is supported
+2018-12-14 15:26:36 - Language pt-BR is supported
+2018-12-14 15:26:36 - Language ca-ES is supported
+2018-12-14 15:26:36 - Language de-DE is supported
+2018-12-14 15:26:36 - Language cs-CZ is supported
+2018-12-14 15:26:36 - Language pl-PL is supported
+2018-12-14 15:26:36 - Language ru-RU is supported
+2018-12-14 15:26:36 - Language ja-JP is supported
+2018-12-14 15:26:36 - Language zh-CN is supported
+2018-12-14 15:26:36 - Language zh-HK is supported
+2018-12-14 15:26:36 - iMS support is NOT available
+2018-12-14 15:26:37 - Initializing screen for graphics
+2018-12-14 15:26:37 - Number of graphics modes: 5
+2018-12-14 15:26:37 - Mode 0: 640 x 480
+2018-12-14 15:26:37 - Mode 1: 800 x 600
+2018-12-14 15:26:37 - Mode 2: 1024 x 768
+2018-12-14 15:26:37 - Mode 3: 1280 x 1024
+2018-12-14 15:26:37 - Mode 4: 2560 x 1080
+2018-12-14 15:26:37 - Getting CPUID
+2018-12-14 15:26:37 - Getting cache size
+2018-12-14 15:26:37 - get_cache_size - Vendor ID: AuthenticAMD Brand ID: AMD Ryzen 7 1700X Eight-Core Processor         
+2018-12-14 15:26:37 - CPU CorePPack: 16 (0x0000400F)
+2018-12-14 15:26:37 - L1 instruction cache size: 16 x 32KB
+2018-12-14 15:26:37 - L1 data cache size: 16 x 64KB
+2018-12-14 15:26:37 - L2 cache size: 16 x 512KB
+2018-12-14 15:26:37 - L3 cache size: 1 x 16384KB
+2018-12-14 15:26:37 - Measuring CPU/cache/mem speed
+2018-12-14 15:26:38 - hpet_init - Found RSDP. Version: 2 
+2018-12-14 15:26:38 - hpet_init - Found XSDT. Entry Count: 17
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: FACP  Version: 6
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: APIC  Version: 3
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: FPDT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: FIDT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: SSDT  Version: 2
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: CRAT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: CDIT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: MCFG  Version: 1
+2018-12-14 15:26:38 - hpet_init - Found ACPI table: HPET  Version: 1
+2018-12-14 15:26:38 - hpet_init - HPET base address: 0xFED00000
+2018-12-14 15:26:38 - hpet_init - HPET gen cap: 0x429B17E10228201 (Period: 69841278fs)
+2018-12-14 15:26:38 - hpet_init - HPET gen cfg: 0x1
+2018-12-14 15:26:38 - hpet_init - main counter value (1): 324367458
+2018-12-14 15:26:38 - hpet_init - main counter value (2): 324912023
+2018-12-14 15:26:38 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:26:38 - cpuspeed_hpet - HPET counter start: 325970302, HPET counter end: 326686211
+2018-12-14 15:26:38 - cpuspeed_hpet - start TSC: 101080989894, end TSC: 101251693728 (difference: 170703834)
+2018-12-14 15:26:39 - cpu_cache_speed - (Attempt 1) clock cycle (ms): 3414076
+2018-12-14 15:26:39 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:26:39 - cpuspeed_hpet - HPET counter start: 341338887, HPET counter end: 342054796
+2018-12-14 15:26:39 - cpuspeed_hpet - start TSC: 104745504454, end TSC: 104916218216 (difference: 170713762)
+2018-12-14 15:26:39 - cpu_cache_speed - (Attempt 2) clock cycle (ms): 3414275
+2018-12-14 15:26:40 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:26:40 - cpuspeed_hpet - HPET counter start: 344144125, HPET counter end: 344860034
+2018-12-14 15:26:40 - cpuspeed_hpet - start TSC: 105414397096, end TSC: 105585113782 (difference: 170716686)
+2018-12-14 15:26:40 - cpu_cache_speed - (Attempt 3) clock cycle (ms): 3414333
+2018-12-14 15:26:40 - cpu_cache_speed - Using average of last 3 samples (3414333, 3414275, 3414076)
+2018-12-14 15:26:40 - cpu_cache_speed - CPU speed: 3414.2MHz
+2018-12-14 15:26:40 - cpu_cache_speed - measuring L1 cache speed at 0xC5F8B000 (64 KB)
+2018-12-14 15:26:41 - cpu_cache_speed - L1 cache speed: 86393 MB/s
+2018-12-14 15:26:41 - cpu_cache_speed - measuring L2 cache speed at 0xC5F1B000 (512 KB)
+2018-12-14 15:26:41 - cpu_cache_speed - L2 cache speed: 72770 MB/s
+2018-12-14 15:26:41 - cpu_cache_speed - measuring L3 cache speed at 0xC3D37000 (16384 KB)
+2018-12-14 15:26:41 - cpu_cache_speed - L3 cache speed: 26989 MB/s
+2018-12-14 15:26:41 - get_mem_speed - measuring mem speed at 0xBC877000 (135936 KB)
+2018-12-14 15:26:41 - get_mem_speed - mem speed: 14321 MB/s
+2018-12-14 15:26:43 - cpu_cache_speed - Memory latency: 82.174 ns
+2018-12-14 15:26:44 - Retrieving CPU MSR data
+2018-12-14 15:26:44 - GetAMDFamilyMSRInfo - CPU AMD Ryzen 7 1700X Eight-Core Processor         : 17h.1h
+2018-12-14 15:26:44 - IsAMDTurboCoreSupported - CPUID[0x80000007][EDX] = 00006599
+2018-12-14 15:26:44 - HWCR register found. CPB enable/disable functionality supported
+2018-12-14 15:26:44 - CPB is: enabled
+2018-12-14 15:26:44 - GetAMDFamilyMSRInfo - MSR[0xC0010292] = 0000000100000052
+2018-12-14 15:26:45 - GetAMDFamilyMSRInfo - MSR Max Pstates/#boosted states: 8, -1
+2018-12-14 15:26:45 - GetAMDFamilyMSRInfo - MSR[C0010064] = 8000000048880888
+2018-12-14 15:26:45 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 136
+2018-12-14 15:26:45 - GetAMDFamilyMSRInfo - Multiplier_P[0] = 34000
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C0010065] = 80000000478B0878
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 120
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[1] = 30000
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C0010066] = 80000000459A0C84
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 12, CPUFid_P = 132
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[2] = 22000
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C0010067] = 0000000000000000
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[3] = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C0010068] = 0000000000000000
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[4] = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C0010069] = 0000000000000000
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[5] = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C001006A] = 0000000000000000
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[6] = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - MSR[C001006B] = 0000000000000000
+2018-12-14 15:26:46 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:26:46 - GetAMDFamilyMSRInfo - Multiplier_P[7] = 0
+2018-12-14 15:26:46 - EnableAMDCPB - MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:26:46 - EnableAMDCPB - New MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:26:46 - AMD MSR enable CPD: MSR[00000000C0010062] = 0x0000000000000000
+2018-12-14 15:26:47 - AMD Set PStateCtl: 0x0000000000000000
+2018-12-14 15:26:47 - Get_MPERF_APERF - CPUID[0x6][ECX] = 00000001
+2018-12-14 15:26:47 - Get_MPERF_APERF - high perf counter freq = 3414228000
+2018-12-14 15:26:49 - MSR 0xC0010293: 00000000000B489C
+2018-12-14 15:26:50 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 156
+2018-12-14 15:26:50 - MSR 0xC0010063: 0000000000000000
+2018-12-14 15:26:50 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:26:50 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:26:50 - Get_MPERF_APERF - time in ns = 1166578
+2018-12-14 15:26:50 - Get_MPERF_APERF - FreqMPERF in KHz = 3415044, FreqAPERF in KHz = 3916716
+2018-12-14 15:26:53 - MSR 0xC0010293: 00000000000B089C
+2018-12-14 15:26:54 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 156
+2018-12-14 15:26:54 - MSR 0xC0010063: 0000000000000000
+2018-12-14 15:26:54 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:26:54 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:26:54 - Get_MPERF_APERF - time in ns = 1179245
+2018-12-14 15:26:54 - Get_MPERF_APERF - FreqMPERF in KHz = 3414689, FreqAPERF in KHz = 3916524
+2018-12-14 15:26:58 - MSR 0xC0010293: 00000000000B089C
+2018-12-14 15:26:59 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 156
+2018-12-14 15:26:59 - MSR 0xC0010063: 0000000000000000
+2018-12-14 15:26:59 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:26:59 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:26:59 - Get_MPERF_APERF - time in ns = 1166906
+2018-12-14 15:26:59 - Get_MPERF_APERF - FreqMPERF in KHz = 3414725, FreqAPERF in KHz = 3916578
+2018-12-14 15:26:59 - GetAMDFamilyMSRInfo - APERF = 3916716, MPERF = 3415044, Mult = 39000
+2018-12-14 15:26:59 - GetAMDFamilyMSRInfo - BaseClock = 10042
+2018-12-14 15:27:00 - GetAMDFamilyMSRInfo - Turbo Core supported
+2018-12-14 15:27:00 - DisableAMDCPB - MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:27:00 - DisableAMDCPB - New MSR[0xC0010015] = 000000000B000011
+2018-12-14 15:27:00 - AMD MSR disable CPD: MSR[00000000C0010062] = 0x0000000000000000
+2018-12-14 15:27:00 - AMD Set PStateCtl: 0x0000000000000000
+2018-12-14 15:27:00 - Get_MPERF_APERF - CPUID[0x6][ECX] = 00000001
+2018-12-14 15:27:00 - Get_MPERF_APERF - high perf counter freq = 3414228000
+2018-12-14 15:27:02 - MSR 0xC0010293: 00000000004B0A9C
+2018-12-14 15:27:04 - GetAMDMult - CPUDid_P = 10, CPUFid_P = 156
+2018-12-14 15:27:04 - MSR 0xC0010063: 0000000000000002
+2018-12-14 15:27:04 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:27:04 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:27:04 - Get_MPERF_APERF - time in ns = 1450360
+2018-12-14 15:27:04 - Get_MPERF_APERF - FreqMPERF in KHz = 3414721, FreqAPERF in KHz = 3133227
+2018-12-14 15:27:06 - MSR 0xC0010293: 00000000004B8A9C
+2018-12-14 15:27:07 - GetAMDMult - CPUDid_P = 10, CPUFid_P = 156
+2018-12-14 15:27:07 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:27:08 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:27:08 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:27:08 - Get_MPERF_APERF - time in ns = 1690943
+2018-12-14 15:27:08 - Get_MPERF_APERF - FreqMPERF in KHz = 3414692, FreqAPERF in KHz = 2742402
+2018-12-14 15:27:10 - MSR 0xC0010293: 00000000004B4A9C
+2018-12-14 15:27:11 - GetAMDMult - CPUDid_P = 10, CPUFid_P = 156
+2018-12-14 15:27:11 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:27:11 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:27:11 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:27:11 - Get_MPERF_APERF - time in ns = 1472139
+2018-12-14 15:27:11 - Get_MPERF_APERF - FreqMPERF in KHz = 3414714, FreqAPERF in KHz = 3133238
+2018-12-14 15:27:11 - GetAMDFamilyMSRInfo - (CPB disabled) APERF = 3133238, MPERF = 3414721, Mult = 31200
+2018-12-14 15:27:11 - GetAMDFamilyMSRInfo - (CPB disabled) BaseClock = 10042
+2018-12-14 15:27:12 - GetAMDFamilyMSRInfo - CPUSpeedTurboTheoreticalMax = 3414280
+2018-12-14 15:27:12 - GetAMDFamilyMSRInfo - (Before sanity check) Freq: 3133238, 31200, 10042, Turbo: 3916716, 39000, 10042 (3916716)
+2018-12-14 15:27:12 - GetAMDFamilyMSRInfo - Freq: 3133238, 31200, 10042, Turbo: 3916716, 39000, 10042 (3916716)
+2018-12-14 15:27:13 - Getting memory size
+2018-12-14 15:27:13 - 0x000000000000 - 0x000000007FFF (32KB) {Boot Services Code}
+2018-12-14 15:27:13 - 0x000000008000 - 0x00000003EFFF (220KB) {Free Memory}
+2018-12-14 15:27:13 - 0x00000003F000 - 0x00000003FFFF (4KB) {Boot Services Data}
+2018-12-14 15:27:13 - 0x000000040000 - 0x00000009FFFF (384KB) {Boot Services Code}
+2018-12-14 15:27:13 - 0x000000100000 - 0x000000FFFFFF (15MB) {Free Memory}
+2018-12-14 15:27:13 - 0x000001000000 - 0x00000101FFFF (128KB) {Boot Services Data}
+2018-12-14 15:27:13 - 0x000001020000 - 0x000009BFFFFF (139MB) {Free Memory}
+2018-12-14 15:27:13 - 0x000009C00000 - 0x000009FFFFFF (4MB) {Reserved Memory}
+2018-12-14 15:27:13 - 0x00000A000000 - 0x00000A1FFFFF (2MB) {Free Memory}
+2018-12-14 15:27:13 - 0x00000A200000 - 0x00000A209FFF (40KB) {ACPI Non-volatile}
+2018-12-14 15:27:13 - 0x00000A20A000 - 0x00000AFFFFFF (13MB) {Free Memory}
+2018-12-14 15:27:13 - 0x00000B000000 - 0x00000B01FFFF (128KB) {Reserved Memory}
+2018-12-14 15:27:13 - 0x00000B020000 - 0x0000C4D36FFF (2973MB) {Free Memory}
+2018-12-14 15:27:13 - 0x0000C4D37000 - 0x0000C4E5AFFF (1168KB) {Loader Code}
+2018-12-14 15:27:13 - 0x0000C4E5B000 - 0x0000C4E78FFF (120KB) {ACPI Tables}
+2018-12-14 15:27:13 - 0x0000C4E79000 - 0x0000C4E79FFF (4KB) {Loader Data}
+2018-12-14 15:27:13 - 0x0000C4E7A000 - 0x0000C992FFFF (74MB) {Boot Services Data}
+2018-12-14 15:27:13 - 0x0000C9930000 - 0x0000C9C1AFFF (2MB) {Free Memory}
+2018-12-14 15:27:13 - 0x0000C9C1B000 - 0x0000CA7C8FFF (11MB) {Boot Services Code}
+2018-12-14 15:27:13 - 0x0000CA7C9000 - 0x0000CA930FFF (1440KB) {Reserved Memory}
+2018-12-14 15:27:13 - 0x0000CA931000 - 0x0000CA93AFFF (40KB) {ACPI Tables}
+2018-12-14 15:27:14 - 0x0000CA93B000 - 0x0000CAA46FFF (1072KB) {Free Memory}
+2018-12-14 15:27:14 - 0x0000CAA47000 - 0x0000CAE07FFF (3MB) {ACPI Non-volatile}
+2018-12-14 15:27:14 - 0x0000CAE08000 - 0x0000CB880FFF (10MB) {Runtime Services Data}
+2018-12-14 15:27:14 - 0x0000CB881000 - 0x0000CB92AFFF (680KB) {Runtime Services Code}
+2018-12-14 15:27:14 - 0x0000CB92B000 - 0x0000CDFFFFFF (38MB) {Boot Services Data}
+2018-12-14 15:27:14 - 0x000100000000 - 0x00022F37FFFF (4851MB) {Free Memory}
+2018-12-14 15:27:14 - 0x0000000A0000 - 0x0000000FFFFF (384KB) {Reserved Memory}
+2018-12-14 15:27:14 - 0x0000CE000000 - 0x0000CFFFFFFF (32MB) {Reserved Memory}
+2018-12-14 15:27:15 - 0x0000F8000000 - 0x0000FBFFFFFF (64MB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FD100000 - 0x0000FDFFFFFF (15MB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEA00000 - 0x0000FEA0FFFF (64KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEB80000 - 0x0000FEC01FFF (520KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEC10000 - 0x0000FEC10FFF (4KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEC30000 - 0x0000FEC30FFF (4KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FED00000 - 0x0000FED00FFF (4KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FED40000 - 0x0000FED44FFF (20KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FED80000 - 0x0000FED8FFFF (64KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEDC2000 - 0x0000FEDCFFFF (56KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEDD4000 - 0x0000FEDD5FFF (8KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FEE00000 - 0x0000FEEFFFFF (1024KB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 0x0000FF000000 - 0x0000FFFFFFFF (16MB) {OS Memory-mapped IO}
+2018-12-14 15:27:15 - 
+2018-12-14 15:27:15 - Available Memory: 0x1F3F9B000 (7GB)
+2018-12-14 15:27:15 - Reserved Memory: 0x1149F000 (276MB)
+2018-12-14 15:27:15 - mem_size - Number of entries: 42
+2018-12-14 15:27:16 - mem_size - Max address: 0x22F380000
+2018-12-14 15:27:16 - mem_size - Total memory size (8533102592 bytes)
+2018-12-14 15:27:16 - Getting memory SPD info
+2018-12-14 15:27:16 - Attempting to enable any disabled SMBus controllers...
+2018-12-14 15:27:16 - Attempting to enable SMBUS:
+2018-12-14 15:27:16 - Searching PCI for SMBus Controller
+2018-12-14 15:27:16 -  Found SMBus device:  VID:1022 DID:790B Bus:00 Dev:14 Fun:00 IO Add:0B00 IO (2) Add:0000 MMIO Add:0 PCI Add:{00:00:00:0000} Rev:59 [AMD Hudson-3 SMBus]
+2018-12-14 15:27:16 - Finished searching PCI for SMBus Controller
+2018-12-14 15:27:17 - [AMD Hudson-3 SMBus Bus:00 Dev:14 Fun:00 Add:0B00] Looking for SPD
+2018-12-14 15:27:17 - Raw SPD bytes for DIMM#0:
+2018-12-14 15:27:17 - 23 10 0C 02 84 19 00 08 00 00 00 03 01 03 00 00 
+2018-12-14 15:27:17 - 00 00 08 0C F4 1B 00 00 6C 6C 6C 11 08 74 20 08 
+2018-12-14 15:27:17 - 00 05 70 03 00 A8 1E 2B 2B 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 16 36 16 36 
+2018-12-14 15:27:17 - 16 36 16 36 00 00 16 36 16 36 16 36 16 36 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 EC B5 CE 00 00 00 00 00 C2 7D C7 
+2018-12-14 15:27:17 - 11 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:17 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AD B2 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 85 02 02 00 00 00 00 00 00 32 34 30 30 20 43 31 
+2018-12-14 15:27:18 - 35 20 53 65 72 69 65 73 00 00 00 00 00 01 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:18 - 0C 4A 0D 20 00 00 00 00 00 94 00 00 07 00 01 00 
+2018-12-14 15:27:18 - 00 63 63 63 10 E9 4D 20 08 00 05 70 03 00 BA 1A 
+2018-12-14 15:27:18 - 27 00 00 00 00 00 00 00 00 85 AE E7 88 88 88 D6 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - Raw SPD bytes for DIMM#1:
+2018-12-14 15:27:19 - 23 10 0C 02 84 19 00 08 00 00 00 03 01 03 00 00 
+2018-12-14 15:27:19 - 00 00 08 0C F4 1B 00 00 6C 6C 6C 11 08 74 20 08 
+2018-12-14 15:27:19 - 00 05 70 03 00 A8 1E 2B 2B 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 16 36 16 36 
+2018-12-14 15:27:19 - 16 36 16 36 00 00 16 36 16 36 16 36 16 36 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:19 - 00 00 00 00 00 EC B5 CE 00 00 00 00 00 C2 7D C7 
+2018-12-14 15:27:20 - 11 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AD B2 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:20 - 85 02 02 00 00 00 00 00 00 32 34 30 30 20 43 31 
+2018-12-14 15:27:20 - 35 20 53 65 72 69 65 73 00 00 00 00 00 01 00 00 
+2018-12-14 15:27:20 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:21 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:21 - 0C 4A 0D 20 00 00 00 00 00 94 00 00 07 00 01 00 
+2018-12-14 15:27:21 - 00 63 63 63 10 E9 4D 20 08 00 05 70 03 00 BA 1A 
+2018-12-14 15:27:21 - 27 00 00 00 00 00 00 00 00 85 AE E7 88 88 88 D6 
+2018-12-14 15:27:21 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:21 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:21 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:21 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:22 - 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2018-12-14 15:27:22 - Getting memory controller info
+2018-12-14 15:27:22 - find_mem_controller - found AMD Ryzen (0h-fh) (1022:1462) at 0-24-2
+2018-12-14 15:27:22 - AMD Ryzen chipset init
+2018-12-14 15:27:22 - UmcCap[0]=0x0001FE28
+2018-12-14 15:27:22 - UmcCapHi[0]=0x00000000
+2018-12-14 15:27:22 - MCA_CTL_MASK_UMC[0]=0000000000000000 (DramEccErr=0)
+2018-12-14 15:27:22 - MCA_CONFIG_UMC[0]=0000000700000035
+2018-12-14 15:27:22 - MCA_CTL_UMC[0]=0000000000000000 (DramEccErr=0)
+2018-12-14 15:27:22 - Setting MCA_CTL_UMC[0][DramEccErr]=1
+2018-12-14 15:27:22 - MCA_IPID_UMC[0]=0000009600050F00 (McaType=0)
+2018-12-14 15:27:22 - MCG_CTL=0000000000000000 [Bit 15 = 0]
+2018-12-14 15:27:22 - Setting MCG_CTL to 0000000000008000
+2018-12-14 15:27:22 - ECCERRCNTSEL[0]=00000000
+2018-12-14 15:27:22 - Setting ECCERRCNTSEL[0] to 0000009600008000
+2018-12-14 15:27:22 - ECCERRCNT[0]=00000000
+2018-12-14 15:27:22 - MCA_STATUS_UMC[0]=0000000000000000
+2018-12-14 15:27:22 - UmcCap[1]=0x0001FE28
+2018-12-14 15:27:22 - UmcCapHi[1]=0x00000000
+2018-12-14 15:27:22 - MCA_CTL_MASK_UMC[1]=0000000000000000 (DramEccErr=0)
+2018-12-14 15:27:22 - MCA_CONFIG_UMC[1]=0000000700000035
+2018-12-14 15:27:23 - MCA_CTL_UMC[1]=0000000000000000 (DramEccErr=0)
+2018-12-14 15:27:23 - Setting MCA_CTL_UMC[1][DramEccErr]=1
+2018-12-14 15:27:23 - MCA_IPID_UMC[1]=0000009600150F00 (McaType=0)
+2018-12-14 15:27:23 - MCG_CTL=0000000000008000 [Bit 16 = 0]
+2018-12-14 15:27:23 - Setting MCG_CTL to 0000000000018000
+2018-12-14 15:27:23 - ECCERRCNTSEL[1]=00000000
+2018-12-14 15:27:24 - Setting ECCERRCNTSEL[1] to 0000009600008000
+2018-12-14 15:27:24 - ECCERRCNT[1]=00000000
+2018-12-14 15:27:24 - MCA_STATUS_UMC[1]=0000000000000000
+2018-12-14 15:27:24 - find_mem_controller - AMD Ryzen (0h-fh) (1022:1462) at 0-24-2
+2018-12-14 15:27:24 - find_mem_controller - AMD Ryzen (0h-fh) ECC mode: detect: no, correct: no, scrub: no, chipkill: no
+2018-12-14 15:27:24 - ECC polling disabled
+2018-12-14 15:27:24 - Successfully located the PI MpService protocol.
+2018-12-14 15:27:24 - BSP is Proc 0
+2018-12-14 15:27:24 - This platform has 16 logical processors of which 16 are enabled.
+2018-12-14 15:27:24 -  ProcID   Enabled   Type   Status   Pkg   Core  Thread  Hyperthread?
+2018-12-14 15:27:24 - --------  --------  ----  -------- -----  ----  ------  ------------
+2018-12-14 15:27:24 - 00000000      Y      BSP  00000007     0     0      0      N
+2018-12-14 15:27:24 - 00000001      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000002      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000003      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000004      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000005      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000006      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000007      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000008      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 00000009      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 0000000A      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:24 - 0000000B      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:25 - 0000000C      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:25 - 0000000D      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:25 - 0000000E      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:25 - 0000000F      Y       AP  00000006     0     0      0      N
+2018-12-14 15:27:25 - Number of hyperthreads detected: 0 
+2018-12-14 15:27:26 - Warning - the number of hyperthreads detected (0) is not half the total number of processors (16) 
+2018-12-14 15:27:26 - This platform has 16 logical processors of which 16 are enabled.
+2018-12-14 15:27:26 - Testing MP support
+2018-12-14 15:27:26 - MPSupportTestMPServices - AP dispatch test
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#1
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#2
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#3
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#4
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#5
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#6
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#7
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#8
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#9
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#10
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#11
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#12
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#13
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#14
+2018-12-14 15:27:26 - MPSupportTestMPServices - Starting AP#15
+2018-12-14 15:27:26 - MPSupportTestMPServices - Waiting for AP's to complete execution
+2018-12-14 15:27:27 - MPSupportTestMPServices - CPU #1 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #2 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #3 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #4 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #5 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #6 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #7 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #8 finished execution
+2018-12-14 15:27:28 - MPSupportTestMPServices - CPU #9 finished execution
+2018-12-14 15:27:29 - MPSupportTestMPServices - CPU #10 finished execution
+2018-12-14 15:27:29 - MPSupportTestMPServices - CPU #11 finished execution
+2018-12-14 15:27:29 - MPSupportTestMPServices - CPU #12 finished execution
+2018-12-14 15:27:29 - MPSupportTestMPServices - CPU #13 finished execution
+2018-12-14 15:27:29 - MPSupportTestMPServices - CPU #14 finished execution
+2018-12-14 15:27:30 - MPSupportTestMPServices - CPU #15 finished execution
+2018-12-14 15:27:30 - MPSupportTestMPServices - AP dispatch test complete
+2018-12-14 15:27:30 - MP test passed. Setting default CPU mode to PARALLEL
+2018-12-14 15:27:30 - Applying configurations
+2018-12-14 15:27:30 - [CONFIG] This platform has 16 logical processors of which 16 are enabled.
+2018-12-14 15:27:30 - Console size = 80 x 25
+2018-12-14 15:27:30 - Screen size = 1024 x 768
+2018-12-14 15:27:30 - Char width=8 height=19
+2018-12-14 15:27:30 - Loading images
+2018-12-14 15:27:35 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00150D84 NB_SMN_DATA_0=0x00000000
+2018-12-14 15:27:37 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:37 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x39A00FEF
+2018-12-14 15:27:37 - Get_AMD_17_CurTmp: 0x39A00FEF, 0, 461
+2018-12-14 15:27:42 - *** TEST SESSION - 2018-12-14 15:27:42 ***
+2018-12-14 15:27:43 - CPU selection mode = 1
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3C000FEF
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3BE00FEF
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: 0x3BE00FEF, 0, 479
+2018-12-14 15:27:43 - Starting pass #1 (of 4)
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3BA00FEF
+2018-12-14 15:27:43 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:44 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3A200FEF
+2018-12-14 15:27:44 - Get_AMD_17_CurTmp: 0x3A200FEF, 0, 465
+2018-12-14 15:27:44 - Running test #0 (Test 0 [Address test, walking ones, 1 CPU])
+2018-12-14 15:27:44 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:27:44 - MtSupportRunAllTests - Start time: 2357 ms
+2018-12-14 15:27:44 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:27:44 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:27:44 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:27:44 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:27:44 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:27:45 - All memory ranges successfully locked
+2018-12-14 15:27:45 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:27:46 - MtSupportRunAllTests - Test execution time: 1.946 (Test 0 cumulative error count: 0)
+2018-12-14 15:27:46 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x37000FEF
+2018-12-14 15:27:46 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:47 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x36C00FEF
+2018-12-14 15:27:47 - Get_AMD_17_CurTmp: 0x36C00FEF, 0, 438
+2018-12-14 15:27:47 - Running test #1 (Test 1 [Address test, own address, 1 CPU])
+2018-12-14 15:27:47 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:27:47 - MtSupportRunAllTests - Start time: 4741 ms
+2018-12-14 15:27:48 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:27:48 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:27:48 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:27:48 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:27:48 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:27:49 - All memory ranges successfully locked
+2018-12-14 15:27:51 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:27:52 - MtSupportRunAllTests - Test execution time: 4.172 (Test 1 cumulative error count: 0)
+2018-12-14 15:27:52 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x36200FEF
+2018-12-14 15:27:52 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:52 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x36000FEF
+2018-12-14 15:27:52 - Get_AMD_17_CurTmp: 0x36000FEF, 0, 432
+2018-12-14 15:27:52 - Running test #2 (Test 2 [Address test, own address])
+2018-12-14 15:27:52 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:27:52 - MtSupportRunAllTests - Start time: 10208 ms
+2018-12-14 15:27:53 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:27:53 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:27:53 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:27:53 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:27:53 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:27:53 - All memory ranges successfully locked
+2018-12-14 15:27:54 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:27:55 - MtSupportRunAllTests - Test execution time: 1.943 (Test 2 cumulative error count: 0)
+2018-12-14 15:27:55 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x35A00FEF
+2018-12-14 15:27:55 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:27:55 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x35A00FEF
+2018-12-14 15:27:55 - Get_AMD_17_CurTmp: 0x35A00FEF, 0, 429
+2018-12-14 15:27:55 - Running test #3 (Test 3 [Moving inversions, ones & zeroes])
+2018-12-14 15:27:55 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:27:55 - MtSupportRunAllTests - Start time: 13430 ms
+2018-12-14 15:27:56 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:27:56 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:27:56 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:27:56 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:27:56 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:27:57 - All memory ranges successfully locked
+2018-12-14 15:28:04 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:28:05 - MtSupportRunAllTests - Test execution time: 8.203 (Test 3 cumulative error count: 0)
+2018-12-14 15:28:05 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x39000FEF
+2018-12-14 15:28:05 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:28:05 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x38E00FEF
+2018-12-14 15:28:05 - Get_AMD_17_CurTmp: 0x38E00FEF, 0, 455
+2018-12-14 15:28:05 - Running test #4 (Test 4 [Moving inversions, 8-bit pattern])
+2018-12-14 15:28:05 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:28:05 - MtSupportRunAllTests - Start time: 22927 ms
+2018-12-14 15:28:06 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:28:06 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:28:06 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:28:06 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:28:06 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:28:06 - All memory ranges successfully locked
+2018-12-14 15:28:40 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:28:41 - MtSupportRunAllTests - Test execution time: 34.996 (Test 4 cumulative error count: 0)
+2018-12-14 15:28:41 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3CE00FEF
+2018-12-14 15:28:41 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:28:41 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3CC00FEF
+2018-12-14 15:28:41 - Get_AMD_17_CurTmp: 0x3CC00FEF, 0, 486
+2018-12-14 15:28:41 - Running test #5 (Test 5 [Moving inversions, random pattern])
+2018-12-14 15:28:41 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:28:42 - MtSupportRunAllTests - Start time: 59238 ms
+2018-12-14 15:28:42 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:28:42 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:28:43 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:28:43 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:28:43 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:28:43 - All memory ranges successfully locked
+2018-12-14 15:29:18 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:29:19 - MtSupportRunAllTests - Test execution time: 36.408 (Test 5 cumulative error count: 0)
+2018-12-14 15:29:19 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3FA00FEF
+2018-12-14 15:29:19 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:29:19 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3F800FEF
+2018-12-14 15:29:19 - Get_AMD_17_CurTmp: 0x3F800FEF, 0, 508
+2018-12-14 15:29:19 - Running test #6 (Test 6 [Block move, 64-byte blocks])
+2018-12-14 15:29:19 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:29:19 - MtSupportRunAllTests - Start time: 96948 ms
+2018-12-14 15:29:20 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:29:20 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:29:20 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:29:20 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:29:21 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:29:21 - All memory ranges successfully locked
+2018-12-14 15:29:46 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:29:48 - MtSupportRunAllTests - Test execution time: 27.062 (Test 6 cumulative error count: 0)
+2018-12-14 15:29:48 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3D400FEF
+2018-12-14 15:29:48 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:29:48 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3D400FEF
+2018-12-14 15:29:48 - Get_AMD_17_CurTmp: 0x3D400FEF, 0, 490
+2018-12-14 15:29:48 - Running test #7 (Test 7 [Moving inversions, 32-bit pattern])
+2018-12-14 15:29:48 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:29:48 - MtSupportRunAllTests - Start time: 125301 ms
+2018-12-14 15:29:49 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:29:49 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:29:49 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:29:49 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:29:49 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:29:49 - All memory ranges successfully locked
+2018-12-14 15:32:08 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:32:09 - MtSupportRunAllTests - Test execution time: 139.574 (Test 7 cumulative error count: 0)
+2018-12-14 15:32:09 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x45C00FEF
+2018-12-14 15:32:10 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:32:10 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x45A00FEF
+2018-12-14 15:32:10 - Get_AMD_17_CurTmp: 0x45A00FEF, 0, 557
+2018-12-14 15:32:10 - Running test #8 (Test 8 [Random number sequence])
+2018-12-14 15:32:10 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:32:10 - MtSupportRunAllTests - Start time: 266187 ms
+2018-12-14 15:32:11 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:32:11 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:32:11 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:32:11 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:32:11 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:32:11 - All memory ranges successfully locked
+2018-12-14 15:32:29 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:32:30 - MtSupportRunAllTests - Test execution time: 19.115 (Test 8 cumulative error count: 0)
+2018-12-14 15:32:30 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x48E00FEF
+2018-12-14 15:32:30 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:32:30 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x48C00FEF
+2018-12-14 15:32:30 - Get_AMD_17_CurTmp: 0x48C00FEF, 0, 582
+2018-12-14 15:32:30 - Running test #9 (Test 9 [Modulo 20, ones & zeros])
+2018-12-14 15:32:30 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:32:30 - MtSupportRunAllTests - Start time: 286595 ms
+2018-12-14 15:32:31 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:32:31 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:32:31 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:32:31 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:32:31 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:32:31 - All memory ranges successfully locked
+2018-12-14 15:33:56 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:33:57 - MtSupportRunAllTests - Test execution time: 84.902 (Test 9 cumulative error count: 0)
+2018-12-14 15:33:57 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x44E00FEF
+2018-12-14 15:33:57 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:33:57 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x44C00FEF
+2018-12-14 15:33:57 - Get_AMD_17_CurTmp: 0x44C00FEF, 0, 550
+2018-12-14 15:33:57 - Running test #10 (Test 10 [Bit fade test, 2 patterns, 1 CPU])
+2018-12-14 15:33:57 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:33:57 - MtSupportRunAllTests - Start time: 372802 ms
+2018-12-14 15:33:58 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:33:58 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:33:58 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:33:58 - Start bit fade test (0x0 - 0x22F380000)
+2018-12-14 15:33:58 - Locking all memory ranges first...
+2018-12-14 15:33:58 - Skipping memory range 0x8000 - 0x3F000 (220KB). Range too small.
+2018-12-14 15:33:58 - Memory range locked: 0x100000 - 0x1000000 (8165432KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0x1020000 - 0x9C00000 (8022200KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0xA000000 - 0xA200000 (8020152KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0xA20A000 - 0xB000000 (8005856KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0xB020000 - 0xC42AA000 (4972216KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0xC9930000 - 0xC9C1B000 (4969228KB of available memory left)
+2018-12-14 15:33:58 - Memory range locked: 0xCA93B000 - 0xCAA47000 (4968156KB of available memory left)
+2018-12-14 15:33:58 - Reducing memory range: 0x100000000 - 0x22F380000 ==> 0x100000000 - 0x22F280000
+2018-12-14 15:33:58 - Memory range locked: 0x100000000 - 0x22F280000 (1244KB of available memory left)
+2018-12-14 15:33:58 - All memory ranges successfully locked
+2018-12-14 15:33:58 - Starting Stage 0, Pattern=00000000
+2018-12-14 15:34:00 - Finished Stage 0, Pattern=00000000
+2018-12-14 15:34:01 - Sleep start time: 376322
+2018-12-14 15:34:01 - Sleep time: 300000
+2018-12-14 15:34:01 - Test 10 - Sleeping (299 seconds remaining)
+2018-12-14 15:34:31 - Slept for 30 seconds
+2018-12-14 15:35:02 - Slept for 61 seconds
+2018-12-14 15:35:32 - Slept for 91 seconds
+2018-12-14 15:36:04 - Slept for 122 seconds
+2018-12-14 15:36:34 - Slept for 152 seconds
+2018-12-14 15:37:05 - Slept for 183 seconds
+2018-12-14 15:37:35 - Slept for 213 seconds
+2018-12-14 15:38:07 - Slept for 244 seconds
+2018-12-14 15:38:37 - Slept for 274 seconds
+2018-12-14 15:39:02 - Starting Stage 1, Pattern=00000000
+2018-12-14 15:39:05 - Finished Stage 1, Pattern=00000000
+2018-12-14 15:39:06 - Starting Stage 0, Pattern=FFFFFFFF
+2018-12-14 15:39:07 - Finished Stage 0, Pattern=FFFFFFFF
+2018-12-14 15:39:08 - Sleep start time: 681869
+2018-12-14 15:39:08 - Sleep time: 300000
+2018-12-14 15:39:08 - Test 10 - Sleeping (299 seconds remaining)
+2018-12-14 15:39:38 - Slept for 30 seconds
+2018-12-14 15:40:10 - Slept for 61 seconds
+2018-12-14 15:40:40 - Slept for 91 seconds
+2018-12-14 15:41:11 - Slept for 122 seconds
+2018-12-14 15:41:41 - Slept for 152 seconds
+2018-12-14 15:42:13 - Slept for 183 seconds
+2018-12-14 15:42:43 - Slept for 213 seconds
+2018-12-14 15:43:14 - Slept for 244 seconds
+2018-12-14 15:43:44 - Slept for 274 seconds
+2018-12-14 15:44:10 - Starting Stage 1, Pattern=FFFFFFFF
+2018-12-14 15:44:12 - Finished Stage 1, Pattern=FFFFFFFF
+2018-12-14 15:44:13 - Cleanup - Unlocking all memory ranges...
+2018-12-14 15:44:13 - MtSupportRunAllTests - Test execution time: 611.538 (Test 10 cumulative error count: 0)
+2018-12-14 15:44:13 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x37000FEF
+2018-12-14 15:44:13 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:44:13 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x37000FEF
+2018-12-14 15:44:13 - Get_AMD_17_CurTmp: 0x37000FEF, 0, 440
+2018-12-14 15:44:13 - Running test #13 (Test 13 [Hammer test])
+2018-12-14 15:44:14 - MtSupportRunAllTests - Setting random seed to 0x50415353
+2018-12-14 15:44:14 - MtSupportRunAllTests - Start time: 986503 ms
+2018-12-14 15:44:14 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:44:14 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:44:14 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:44:15 - Start double-sided hammer test (0x0 - 0x22F380000, Step size: 0x1000000)
+2018-12-14 15:44:15 - Using random pattern
+2018-12-14 15:44:15 - Locking all memory ranges first...
+2018-12-14 15:44:15 - Skipping memory range 0x8000 - 0x3F000 (220KB). Range too small.
+2018-12-14 15:44:15 - Memory range locked: 0x100000 - 0x1000000 (8165432KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0x1020000 - 0x9C00000 (8022200KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0xA000000 - 0xA200000 (8020152KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0xA20A000 - 0xB000000 (8005856KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0xB020000 - 0xC42AA000 (4972216KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0xC9930000 - 0xC9C1B000 (4969228KB of available memory left)
+2018-12-14 15:44:15 - Memory range locked: 0xCA93B000 - 0xCAA47000 (4968156KB of available memory left)
+2018-12-14 15:44:15 - Reducing memory range: 0x100000000 - 0x22F380000 ==> 0x100000000 - 0x22F280000
+2018-12-14 15:44:15 - Memory range locked: 0x100000000 - 0x22F280000 (1244KB of available memory left)
+2018-12-14 15:44:15 - All memory ranges successfully locked
+2018-12-14 15:44:15 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:22 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:29 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:36 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:45 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:52 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:44:59 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:06 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0xB020000 - 0x2B020000]
+2018-12-14 15:45:07 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:13 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:21 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x2B020000 - 0x4B020000]
+2018-12-14 15:45:22 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:29 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:36 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x4B020000 - 0x6B020000]
+2018-12-14 15:45:37 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:45 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:45:52 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x6B020000 - 0x8B020000]
+2018-12-14 15:45:53 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:01 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:08 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x8B020000 - 0xAB020000]
+2018-12-14 15:46:09 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:21 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3EE00FEF
+2018-12-14 15:46:22 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:46:22 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3DA00FEF
+2018-12-14 15:46:22 - Get_AMD_17_CurTmp: 0x3DA00FEF, 0, 493
+2018-12-14 15:46:22 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:30 - RunHammerTest - Running hammer test on 3 CPUs (134MB each) [0xAB020000 - 0xC42AA000]
+2018-12-14 15:46:31 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:40 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:47 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x100000000 - 0x120000000]
+2018-12-14 15:46:48 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:46:55 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:03 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x120000000 - 0x140000000]
+2018-12-14 15:47:03 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:11 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:18 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x140000000 - 0x160000000]
+2018-12-14 15:47:19 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:26 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:34 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x160000000 - 0x180000000]
+2018-12-14 15:47:35 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:42 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:49 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x180000000 - 0x1A0000000]
+2018-12-14 15:47:51 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:47:58 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:05 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x1A0000000 - 0x1C0000000]
+2018-12-14 15:48:06 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:14 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:21 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x1C0000000 - 0x1E0000000]
+2018-12-14 15:48:23 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:30 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:37 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x1E0000000 - 0x200000000]
+2018-12-14 15:48:38 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:46 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:48:53 - RunHammerTest - Running hammer test on 4 CPUs (128MB each) [0x200000000 - 0x220000000]
+2018-12-14 15:48:54 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:49:01 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:49:09 - Memory range 0x8000 - 0x3F000 was not locked. Ignoring...
+2018-12-14 15:49:16 - Cleanup - Unlocking all memory ranges...
+2018-12-14 15:49:17 - MtSupportRunAllTests - Test execution time: 300.442 (Test 13 cumulative error count: 0)
+2018-12-14 15:49:17 - Finished pass #1 (of 4) (Cumulative error count: 0)
+2018-12-14 15:49:17 - Starting pass #2 (of 4)
+2018-12-14 15:49:17 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x39200FEF
+2018-12-14 15:49:17 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:49:17 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x39200FEF
+2018-12-14 15:49:17 - Get_AMD_17_CurTmp: 0x39200FEF, 0, 457
+2018-12-14 15:49:18 - Running test #0 (Test 0 [Address test, walking ones, 1 CPU])
+2018-12-14 15:49:18 - MtSupportRunAllTests - Setting random seed to 0xE97B276A
+2018-12-14 15:49:18 - MtSupportRunAllTests - Start time: 1288305 ms
+2018-12-14 15:49:18 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:49:18 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:49:18 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:49:18 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:49:18 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:49:18 - All memory ranges successfully locked
+2018-12-14 15:49:18 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:49:20 - MtSupportRunAllTests - Test execution time: 1.954 (Test 0 cumulative error count: 0)
+2018-12-14 15:49:20 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x35800FEF
+2018-12-14 15:49:20 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:49:20 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x35800FEF
+2018-12-14 15:49:20 - Get_AMD_17_CurTmp: 0x35800FEF, 0, 428
+2018-12-14 15:49:20 - Running test #1 (Test 1 [Address test, own address, 1 CPU])
+2018-12-14 15:49:20 - MtSupportRunAllTests - Setting random seed to 0xCAC6C12A
+2018-12-14 15:49:21 - MtSupportRunAllTests - Start time: 1291543 ms
+2018-12-14 15:49:21 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:49:21 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:49:21 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:49:21 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:49:21 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:49:21 - All memory ranges successfully locked
+2018-12-14 15:49:24 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:49:25 - MtSupportRunAllTests - Test execution time: 3.303 (Test 1 cumulative error count: 0)
+2018-12-14 15:49:25 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x36C00FEF
+2018-12-14 15:49:25 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:49:25 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x36A00FEF
+2018-12-14 15:49:25 - Get_AMD_17_CurTmp: 0x36A00FEF, 0, 437
+2018-12-14 15:49:25 - Running test #2 (Test 2 [Address test, own address])
+2018-12-14 15:49:25 - MtSupportRunAllTests - Setting random seed to 0x7266B8F8
+2018-12-14 15:49:26 - MtSupportRunAllTests - Start time: 1296143 ms
+2018-12-14 15:49:26 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:49:26 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:49:26 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:49:26 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:49:26 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:49:26 - All memory ranges successfully locked
+2018-12-14 15:49:27 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:49:28 - MtSupportRunAllTests - Test execution time: 1.950 (Test 2 cumulative error count: 0)
+2018-12-14 15:49:28 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x36000FEF
+2018-12-14 15:49:28 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:49:28 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x36000FEF
+2018-12-14 15:49:28 - Get_AMD_17_CurTmp: 0x36000FEF, 0, 432
+2018-12-14 15:49:28 - Running test #3 (Test 3 [Moving inversions, ones & zeroes])
+2018-12-14 15:49:28 - MtSupportRunAllTests - Setting random seed to 0x08BF4228
+2018-12-14 15:49:29 - MtSupportRunAllTests - Start time: 1299398 ms
+2018-12-14 15:49:29 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:49:29 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:49:29 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:49:29 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:49:29 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:49:29 - All memory ranges successfully locked
+2018-12-14 15:49:48 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:49:49 - MtSupportRunAllTests - Test execution time: 19.470 (Test 3 cumulative error count: 0)
+2018-12-14 15:49:49 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x3B200FEF
+2018-12-14 15:49:49 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:49:49 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3B000FEF
+2018-12-14 15:49:49 - Get_AMD_17_CurTmp: 0x3B000FEF, 0, 472
+2018-12-14 15:49:49 - Running test #4 (Test 4 [Moving inversions, 8-bit pattern])
+2018-12-14 15:49:50 - MtSupportRunAllTests - Setting random seed to 0x40008858
+2018-12-14 15:49:51 - MtSupportRunAllTests - Start time: 1321055 ms
+2018-12-14 15:49:51 - ReadMemoryRanges - Available Pages = 2045198
+2018-12-14 15:49:51 - MtSupportRunAllTests - Enabling memory cache for test
+2018-12-14 15:49:51 - MtSupportRunAllTests - Enabling memory cache complete
+2018-12-14 15:49:51 - Start memory range test (0x0 - 0x22F380000)
+2018-12-14 15:49:51 - Pre-allocating memory ranges >=16MB first...
+2018-12-14 15:49:51 - All memory ranges successfully locked
+2018-12-14 15:50:08 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x40600FEF
+2018-12-14 15:50:09 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:50:09 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x3EA00FEF
+2018-12-14 15:50:09 - Get_AMD_17_CurTmp: 0x3EA00FEF, 0, 501
+2018-12-14 15:50:09 - Cleanup - Releasing all memory ranges...
+2018-12-14 15:50:09 - MtSupportRunAllTests - Test execution time: 17.793 (Test 4 cumulative error count: 0)
+2018-12-14 15:50:09 - Test aborted
+2018-12-14 15:50:20 - Get_AMD_17_CurTmp: NB_SMN_INDEX_0=0x00059800 NB_SMN_DATA_0=0x42C00FEF
+2018-12-14 15:50:21 - Get_AMD_17_CurTmp: Setting NB_SMN_INDEX_0 to 0x00059800
+2018-12-14 15:50:21 - Get_AMD_17_CurTmp: NB_SMN_DATA_0=0x41000FEF
+2018-12-14 15:50:21 - Get_AMD_17_CurTmp: 0x41000FEF, 0, 520
+2018-12-14 15:50:45 - Attempting to retrieve the root directory of the data partition.
+2018-12-14 15:50:46 - Found 5 handles that supported SimpleFileSystem
+2018-12-14 15:50:46 - Checking handle 0 (C80DEF98)
+2018-12-14 15:50:46 - Handle is own partition
+2018-12-14 15:50:46 - Checking handle 1 (C80DE798)
+2018-12-14 15:50:46 - HD node found: MBR type(2), Signature type(2), Part #(2), Start LBA(514048), Num Sectors(509919)
+2018-12-14 15:50:46 - Self node: MBR type(2), Signature type(2), Part #(1), Start LBA(2048), Num Sectors(509953)
+2018-12-14 15:50:46 - Checking handle 2 (C7423B98)
+2018-12-14 15:50:47 - Checking handle 3 (C7423B18)
+2018-12-14 15:50:47 - Checking handle 4 (C7414A98)
+2018-12-14 15:50:47 - Disabling watchdog timer (Result: Success)
+2018-12-14 15:50:47 - Could not find Simple Network protocol.
+2018-12-14 15:50:47 - =============================================
+2018-12-14 15:50:47 - MemTest86 V8.0 Free Build: 1000 (64-bit)
+2018-12-14 15:50:47 - =============================================
+2018-12-14 15:50:47 - SMBIOS BIOS INFO Vendor: "American Megatrends Inc.", Version: "4207", Release Date: "12/07/2018"
+2018-12-14 15:50:47 - SMBIOS SYSTEM INFO Manufacturer: "System manufacturer", Product: "System Product Name", Version: "System Version", S/N: "System Serial Number", SKU: "", Family: ""
+2018-12-14 15:50:47 - SMBIOS: Found SMBIOS BaseboardInformation (pbLinAddr=0xE6C27, FormattedLen=15, iTotalLen=117)
+2018-12-14 15:50:47 - SMBIOS BASEBOARD INFO Manufacturer: "ASUSTeK COMPUTER INC.", Product: "ROG STRIX B350-F GAMING", Version: "Rev X.0x", S/N: "180119092103886", AssetTag: "Default string", LocationInChassis: "Default string"
+2018-12-14 15:50:47 - EFI Specifications: 2.60
+2018-12-14 15:50:47 - Found blacklist file
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Mac-F42C88C8" (BIOS: "", FLAGS: 1) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Mac-F4238CC8" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Mac-27ADBB7B4CEE8E61" (BIOS: "", FLAGS: 20) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "80AF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Z97MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Z170MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:47 - [BLACKLIST] Adding "Z170X-Gaming 3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "Z170X-Gaming 7" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "Z170X-Gaming GT" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "Z170X-UD3-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "Z170-HD3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "990FXA-UD3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:48 - [BLACKLIST] Adding "970A-DS3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-Ultra Gaming-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "M5A97 R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "M5A97 EVO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "M5A99FX PRO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-A" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-A/USB 3.1" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-A II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-A" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "Sabertooth X99" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "SABERTOOTH 990FX R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "STRIX X99 GAMING" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-DELUXE" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X99-DELUXE II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "RAMPAGE V EXTREME" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "MAXIMUS VIII RANGER" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "Z10PE-D8 WS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X9DRW" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X9DRW-3LN4F+/X9DRW-3TF+" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X9SRL-F" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "X9DRD-iF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "151-BE-E097" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "131-HE-E095-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "151-HE-E999-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:49 - [BLACKLIST] Adding "PRIME B350-PLUS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:50 - [BLACKLIST] Adding "PRIME X370-PRO" (BIOS: "", FLAGS: 4) to blacklist
+2018-12-14 15:50:50 - [BLACKLIST] Adding "CROSSHAIR VI HERO" (BIOS: "1602", FLAGS: 4) to blacklist
+2018-12-14 15:50:50 - [BLACKLIST] Adding "ROG STRIX X370-F GAMING" (BIOS: "4012", FLAGS: 4) to blacklist
+2018-12-14 15:50:51 - [BLACKLIST] Adding "OEMSH Product" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:50:51 - [BLACKLIST] Adding "LNVNB161216" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:50:51 - [BLACKLIST] Adding "GA-990FX-GAMING" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:51 - [BLACKLIST] Adding "X399 SLI PLUS (MS-7B09)" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:50:51 - [BLACKLIST] 44 boards added to blacklist
+2018-12-14 15:50:51 - Console Control protocol workaround enabled
+2018-12-14 15:50:51 - Number of console modes: 4
+2018-12-14 15:50:51 - Mode 0: 80 x 25
+2018-12-14 15:50:51 - Mode 1: 80 x 50
+2018-12-14 15:50:51 - Mode 2: 100 x 31
+2018-12-14 15:50:51 - Mode 3: 320 x 56
+2018-12-14 15:50:51 - Initializing localization strings
+2018-12-14 15:50:51 - Language en-US is supported
+2018-12-14 15:50:51 - Language fr-FR is supported
+2018-12-14 15:50:51 - Language it-IT is supported
+2018-12-14 15:50:51 - Language es-AR is supported
+2018-12-14 15:50:51 - GetGlyph failed for character 0x00C3 (Warning Unknown Glyph)
+2018-12-14 15:50:51 - Language pt-BR is not supported
+2018-12-14 15:50:51 - Language ca-ES is supported
+2018-12-14 15:50:51 - Language de-DE is supported
+2018-12-14 15:50:51 - GetGlyph failed for character 0x010C (Warning Unknown Glyph)
+2018-12-14 15:50:51 - Language cs-CZ is not supported
+2018-12-14 15:50:52 - GetGlyph failed for character 0x0104 (Warning Unknown Glyph)
+2018-12-14 15:50:52 - Language pl-PL is not supported
+2018-12-14 15:50:52 - Language ru-RU is supported
+2018-12-14 15:50:52 - GetGlyph failed for character 0x3041 (Warning Unknown Glyph)
+2018-12-14 15:50:52 - Language ja-JP is not supported
+2018-12-14 15:50:52 - GetGlyph failed for character 0x4E0F (Warning Unknown Glyph)
+2018-12-14 15:50:52 - Language zh-CN is not supported
+2018-12-14 15:50:52 - GetGlyph failed for character 0xF944 (Warning Unknown Glyph)
+2018-12-14 15:50:53 - Language zh-HK is not supported
+2018-12-14 15:50:53 - Font does not support all languages. Installing unicode font...
+2018-12-14 15:50:53 - InitFont - Font header version: 1.1
+2018-12-14 15:50:53 - InitFont - Number of narrow glyphs: 6969
+2018-12-14 15:50:53 - InitFont - Number of wide glyphs: 50117
+2018-12-14 15:50:53 - Language en-US is supported
+2018-12-14 15:50:53 - Language fr-FR is supported
+2018-12-14 15:50:53 - Language it-IT is supported
+2018-12-14 15:50:53 - Language es-AR is supported
+2018-12-14 15:50:53 - Language pt-BR is supported
+2018-12-14 15:50:53 - Language ca-ES is supported
+2018-12-14 15:50:53 - Language de-DE is supported
+2018-12-14 15:50:53 - Language cs-CZ is supported
+2018-12-14 15:50:53 - Language pl-PL is supported
+2018-12-14 15:50:53 - Language ru-RU is supported
+2018-12-14 15:50:53 - Language ja-JP is supported
+2018-12-14 15:50:53 - Language zh-CN is supported
+2018-12-14 15:50:53 - Language zh-HK is supported
+2018-12-14 15:50:54 - iMS support is NOT available
+2018-12-14 15:50:54 - Initializing screen for graphics
+2018-12-14 15:50:54 - Number of graphics modes: 5
+2018-12-14 15:50:54 - Mode 0: 640 x 480
+2018-12-14 15:50:55 - Mode 1: 800 x 600
+2018-12-14 15:50:55 - Mode 2: 1024 x 768
+2018-12-14 15:50:55 - Mode 3: 1280 x 1024
+2018-12-14 15:50:55 - Mode 4: 2560 x 1080
+2018-12-14 15:50:55 - Getting CPUID
+2018-12-14 15:50:55 - Getting cache size
+2018-12-14 15:50:55 - get_cache_size - Vendor ID: AuthenticAMD Brand ID: AMD Ryzen 7 1700X Eight-Core Processor         
+2018-12-14 15:50:55 - CPU CorePPack: 16 (0x0000400F)
+2018-12-14 15:50:55 - L1 instruction cache size: 16 x 32KB
+2018-12-14 15:50:55 - L1 data cache size: 16 x 64KB
+2018-12-14 15:50:55 - L2 cache size: 16 x 512KB
+2018-12-14 15:50:55 - L3 cache size: 1 x 16384KB
+2018-12-14 15:50:55 - Measuring CPU/cache/mem speed
+2018-12-14 15:50:55 - hpet_init - Found RSDP. Version: 2 
+2018-12-14 15:50:55 - hpet_init - Found XSDT. Entry Count: 17
+2018-12-14 15:50:55 - hpet_init - Found ACPI table: FACP  Version: 6
+2018-12-14 15:50:55 - hpet_init - Found ACPI table: APIC  Version: 3
+2018-12-14 15:50:55 - hpet_init - Found ACPI table: FPDT  Version: 1
+2018-12-14 15:50:55 - hpet_init - Found ACPI table: FIDT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: SSDT  Version: 2
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: CRAT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: CDIT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: MCFG  Version: 1
+2018-12-14 15:50:56 - hpet_init - Found ACPI table: HPET  Version: 1
+2018-12-14 15:50:56 - hpet_init - HPET base address: 0xFED00000
+2018-12-14 15:50:56 - hpet_init - HPET gen cap: 0x429B17E10228201 (Period: 69841278fs)
+2018-12-14 15:50:56 - hpet_init - HPET gen cfg: 0x1
+2018-12-14 15:50:57 - hpet_init - main counter value (1): 347846054
+2018-12-14 15:50:57 - hpet_init - main counter value (2): 348364846
+2018-12-14 15:50:57 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:50:57 - cpuspeed_hpet - HPET counter start: 349416255, HPET counter end: 350132164
+2018-12-14 15:50:57 - cpuspeed_hpet - start TSC: 106076882880, end TSC: 106247594976 (difference: 170712096)
+2018-12-14 15:50:57 - cpu_cache_speed - (Attempt 1) clock cycle (ms): 3414241
+2018-12-14 15:50:57 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:50:57 - cpuspeed_hpet - HPET counter start: 352217028, HPET counter end: 352932937
+2018-12-14 15:50:57 - cpuspeed_hpet - start TSC: 106744713600, end TSC: 106915422126 (difference: 170708526)
+2018-12-14 15:50:57 - cpu_cache_speed - (Attempt 2) clock cycle (ms): 3414170
+2018-12-14 15:50:57 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:50:57 - cpuspeed_hpet - HPET counter start: 355020162, HPET counter end: 355736071
+2018-12-14 15:50:57 - cpuspeed_hpet - start TSC: 107413081452, end TSC: 107583791644 (difference: 170710192)
+2018-12-14 15:50:57 - cpu_cache_speed - (Attempt 3) clock cycle (ms): 3414203
+2018-12-14 15:50:57 - cpu_cache_speed - Using average of last 3 samples (3414203, 3414170, 3414241)
+2018-12-14 15:50:57 - cpu_cache_speed - CPU speed: 3414.2MHz
+2018-12-14 15:50:58 - cpu_cache_speed - measuring L1 cache speed at 0xC5F8B000 (64 KB)
+2018-12-14 15:50:58 - cpu_cache_speed - L1 cache speed: 86486 MB/s
+2018-12-14 15:50:58 - cpu_cache_speed - measuring L2 cache speed at 0xC5F1B000 (512 KB)
+2018-12-14 15:50:58 - cpu_cache_speed - L2 cache speed: 66119 MB/s
+2018-12-14 15:50:58 - cpu_cache_speed - measuring L3 cache speed at 0xC3C3D000 (16384 KB)
+2018-12-14 15:50:58 - cpu_cache_speed - L3 cache speed: 26097 MB/s
+2018-12-14 15:50:58 - get_mem_speed - measuring mem speed at 0xBC77D000 (135936 KB)
+2018-12-14 15:50:59 - get_mem_speed - mem speed: 14404 MB/s
+2018-12-14 15:51:01 - cpu_cache_speed - Memory latency: 82.333 ns
+2018-12-14 15:51:02 - Retrieving CPU MSR data
+2018-12-14 15:51:02 - GetAMDFamilyMSRInfo - CPU AMD Ryzen 7 1700X Eight-Core Processor         : 17h.1h
+2018-12-14 15:51:02 - IsAMDTurboCoreSupported - CPUID[0x80000007][EDX] = 00006599
+2018-12-14 15:51:02 - HWCR register found. CPB enable/disable functionality supported
+2018-12-14 15:51:02 - CPB is: enabled
+2018-12-14 15:51:02 - GetAMDFamilyMSRInfo - MSR[0xC0010292] = 0000000100000052
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR Max Pstates/#boosted states: 8, -1
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010064] = 8000000048880888
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 136
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - Multiplier_P[0] = 34000
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010065] = 80000000478B0878
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 120
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - Multiplier_P[1] = 30000
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010066] = 80000000459A0C84
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 12, CPUFid_P = 132
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - Multiplier_P[2] = 22000
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010067] = 0000000000000000
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - Multiplier_P[3] = 0
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010068] = 0000000000000000
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - Multiplier_P[4] = 0
+2018-12-14 15:51:03 - GetAMDFamilyMSRInfo - MSR[C0010069] = 0000000000000000
+2018-12-14 15:51:03 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:51:04 - GetAMDFamilyMSRInfo - Multiplier_P[5] = 0
+2018-12-14 15:51:04 - GetAMDFamilyMSRInfo - MSR[C001006A] = 0000000000000000
+2018-12-14 15:51:04 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:51:04 - GetAMDFamilyMSRInfo - Multiplier_P[6] = 0
+2018-12-14 15:51:04 - GetAMDFamilyMSRInfo - MSR[C001006B] = 0000000000000000
+2018-12-14 15:51:04 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:51:04 - GetAMDFamilyMSRInfo - Multiplier_P[7] = 0
+2018-12-14 15:51:04 - EnableAMDCPB - MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:51:04 - EnableAMDCPB - New MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:51:05 - AMD MSR enable CPD: MSR[00000000C0010062] = 0x0000000000000000
+2018-12-14 15:51:05 - AMD Set PStateCtl: 0x0000000000000000
+2018-12-14 15:51:05 - Get_MPERF_APERF - CPUID[0x6][ECX] = 00000001
+2018-12-14 15:51:05 - Get_MPERF_APERF - high perf counter freq = 3414204000
+2018-12-14 15:51:06 - MSR 0xC0010293: 00000000000B489C
+2018-12-14 15:51:07 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 156
+2018-12-14 15:51:07 - MSR 0xC0010063: 0000000000000000
+2018-12-14 15:51:07 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:51:07 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:51:07 - Get_MPERF_APERF - time in ns = 1164076
+2018-12-14 15:51:07 - Get_MPERF_APERF - FreqMPERF in KHz = 3415053, FreqAPERF in KHz = 3916709
+2018-12-14 15:55:55 - Attempting to retrieve the root directory of the data partition.
+2018-12-14 15:55:56 - Found 5 handles that supported SimpleFileSystem
+2018-12-14 15:55:56 - Checking handle 0 (C80DEF98)
+2018-12-14 15:55:56 - Handle is own partition
+2018-12-14 15:55:56 - Checking handle 1 (C80DE798)
+2018-12-14 15:55:56 - HD node found: MBR type(2), Signature type(2), Part #(2), Start LBA(514048), Num Sectors(509919)
+2018-12-14 15:55:56 - Self node: MBR type(2), Signature type(2), Part #(1), Start LBA(2048), Num Sectors(509953)
+2018-12-14 15:55:56 - Checking handle 2 (C7423B98)
+2018-12-14 15:55:57 - Checking handle 3 (C7423B18)
+2018-12-14 15:55:57 - Checking handle 4 (C7414A98)
+2018-12-14 15:55:57 - Disabling watchdog timer (Result: Success)
+2018-12-14 15:55:57 - Could not find Simple Network protocol.
+2018-12-14 15:55:58 - =============================================
+2018-12-14 15:55:58 - MemTest86 V8.0 Free Build: 1000 (64-bit)
+2018-12-14 15:55:58 - =============================================
+2018-12-14 15:55:58 - SMBIOS BIOS INFO Vendor: "American Megatrends Inc.", Version: "4207", Release Date: "12/07/2018"
+2018-12-14 15:55:58 - SMBIOS SYSTEM INFO Manufacturer: "System manufacturer", Product: "System Product Name", Version: "System Version", S/N: "System Serial Number", SKU: "", Family: ""
+2018-12-14 15:55:58 - SMBIOS: Found SMBIOS BaseboardInformation (pbLinAddr=0xE6C27, FormattedLen=15, iTotalLen=117)
+2018-12-14 15:55:58 - SMBIOS BASEBOARD INFO Manufacturer: "ASUSTeK COMPUTER INC.", Product: "ROG STRIX B350-F GAMING", Version: "Rev X.0x", S/N: "180119092103886", AssetTag: "Default string", LocationInChassis: "Default string"
+2018-12-14 15:55:58 - EFI Specifications: 2.60
+2018-12-14 15:55:58 - Found blacklist file
+2018-12-14 15:55:58 - [BLACKLIST] Adding "Mac-F42C88C8" (BIOS: "", FLAGS: 1) to blacklist
+2018-12-14 15:55:58 - [BLACKLIST] Adding "Mac-F4238CC8" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:55:58 - [BLACKLIST] Adding "Mac-27ADBB7B4CEE8E61" (BIOS: "", FLAGS: 20) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "80AF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z97MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170X-Gaming 3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170X-Gaming 7" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170X-Gaming GT" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170X-UD3-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "Z170-HD3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "990FXA-UD3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:55:59 - [BLACKLIST] Adding "970A-DS3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "X99-Ultra Gaming-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "M5A97 R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "M5A97 EVO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "M5A99FX PRO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "X99-A" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "X99-A/USB 3.1" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "X99-A II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "X99-A" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "Sabertooth X99" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:56:00 - [BLACKLIST] Adding "SABERTOOTH 990FX R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "STRIX X99 GAMING" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X99-DELUXE" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X99-DELUXE II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "RAMPAGE V EXTREME" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "MAXIMUS VIII RANGER" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "Z10PE-D8 WS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X9DRW" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X9DRW-3LN4F+/X9DRW-3TF+" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X9SRL-F" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "X9DRD-iF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "151-BE-E097" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "131-HE-E095-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "151-HE-E999-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:01 - [BLACKLIST] Adding "PRIME B350-PLUS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "PRIME X370-PRO" (BIOS: "", FLAGS: 4) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "CROSSHAIR VI HERO" (BIOS: "1602", FLAGS: 4) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "ROG STRIX X370-F GAMING" (BIOS: "4012", FLAGS: 4) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "OEMSH Product" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "LNVNB161216" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "GA-990FX-GAMING" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] Adding "X399 SLI PLUS (MS-7B09)" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:56:02 - [BLACKLIST] 44 boards added to blacklist
+2018-12-14 15:56:02 - Console Control protocol workaround enabled
+2018-12-14 15:56:02 - Number of console modes: 4
+2018-12-14 15:56:02 - Mode 0: 80 x 25
+2018-12-14 15:56:02 - Mode 1: 80 x 50
+2018-12-14 15:56:02 - Mode 2: 100 x 31
+2018-12-14 15:56:02 - Mode 3: 320 x 56
+2018-12-14 15:56:02 - Initializing localization strings
+2018-12-14 15:56:03 - Language en-US is supported
+2018-12-14 15:56:03 - Language fr-FR is supported
+2018-12-14 15:56:03 - Language it-IT is supported
+2018-12-14 15:56:03 - Language es-AR is supported
+2018-12-14 15:56:03 - GetGlyph failed for character 0x00C3 (Warning Unknown Glyph)
+2018-12-14 15:56:03 - Language pt-BR is not supported
+2018-12-14 15:56:03 - Language ca-ES is supported
+2018-12-14 15:56:03 - Language de-DE is supported
+2018-12-14 15:56:03 - GetGlyph failed for character 0x010C (Warning Unknown Glyph)
+2018-12-14 15:56:03 - Language cs-CZ is not supported
+2018-12-14 15:56:04 - GetGlyph failed for character 0x0104 (Warning Unknown Glyph)
+2018-12-14 15:56:04 - Language pl-PL is not supported
+2018-12-14 15:56:04 - Language ru-RU is supported
+2018-12-14 15:56:04 - GetGlyph failed for character 0x3041 (Warning Unknown Glyph)
+2018-12-14 15:56:04 - Language ja-JP is not supported
+2018-12-14 15:56:04 - GetGlyph failed for character 0x4E0F (Warning Unknown Glyph)
+2018-12-14 15:56:04 - Language zh-CN is not supported
+2018-12-14 15:56:04 - GetGlyph failed for character 0xF944 (Warning Unknown Glyph)
+2018-12-14 15:56:04 - Language zh-HK is not supported
+2018-12-14 15:56:04 - Font does not support all languages. Installing unicode font...
+2018-12-14 15:56:04 - InitFont - Font header version: 1.1
+2018-12-14 15:56:04 - InitFont - Number of narrow glyphs: 6969
+2018-12-14 15:56:04 - InitFont - Number of wide glyphs: 50117
+2018-12-14 15:56:04 - Language en-US is supported
+2018-12-14 15:56:05 - Language fr-FR is supported
+2018-12-14 15:56:05 - Language it-IT is supported
+2018-12-14 15:56:05 - Language es-AR is supported
+2018-12-14 15:56:05 - Language pt-BR is supported
+2018-12-14 15:56:05 - Language ca-ES is supported
+2018-12-14 15:56:05 - Language de-DE is supported
+2018-12-14 15:56:05 - Language cs-CZ is supported
+2018-12-14 15:56:05 - Language pl-PL is supported
+2018-12-14 15:56:05 - Language ru-RU is supported
+2018-12-14 15:56:05 - Language ja-JP is supported
+2018-12-14 15:56:05 - Language zh-CN is supported
+2018-12-14 15:56:05 - Language zh-HK is supported
+2018-12-14 15:56:06 - iMS support is NOT available
+2018-12-14 15:56:06 - Initializing screen for graphics
+2018-12-14 15:56:06 - Number of graphics modes: 5
+2018-12-14 15:56:06 - Mode 0: 640 x 480
+2018-12-14 15:56:06 - Mode 1: 800 x 600
+2018-12-14 15:56:06 - Mode 2: 1024 x 768
+2018-12-14 15:56:06 - Mode 3: 1280 x 1024
+2018-12-14 15:56:06 - Mode 4: 2560 x 1080
+2018-12-14 15:56:06 - Getting CPUID
+2018-12-14 15:56:06 - Getting cache size
+2018-12-14 15:56:06 - get_cache_size - Vendor ID: AuthenticAMD Brand ID: AMD Ryzen 7 1700X Eight-Core Processor         
+2018-12-14 15:56:06 - CPU CorePPack: 16 (0x0000400F)
+2018-12-14 15:56:06 - L1 instruction cache size: 16 x 32KB
+2018-12-14 15:56:06 - L1 data cache size: 16 x 64KB
+2018-12-14 15:56:06 - L2 cache size: 16 x 512KB
+2018-12-14 15:56:06 - L3 cache size: 1 x 16384KB
+2018-12-14 15:56:06 - Measuring CPU/cache/mem speed
+2018-12-14 15:56:06 - hpet_init - Found RSDP. Version: 2 
+2018-12-14 15:56:07 - hpet_init - Found XSDT. Entry Count: 17
+2018-12-14 15:56:07 - hpet_init - Found ACPI table: FACP  Version: 6
+2018-12-14 15:56:07 - hpet_init - Found ACPI table: APIC  Version: 3
+2018-12-14 15:56:07 - hpet_init - Found ACPI table: FPDT  Version: 1
+2018-12-14 15:56:07 - hpet_init - Found ACPI table: FIDT  Version: 1
+2018-12-14 15:56:07 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: SSDT  Version: 2
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: CRAT  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: CDIT  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: MCFG  Version: 1
+2018-12-14 15:56:08 - hpet_init - Found ACPI table: HPET  Version: 1
+2018-12-14 15:56:08 - hpet_init - HPET base address: 0xFED00000
+2018-12-14 15:56:08 - hpet_init - HPET gen cap: 0x429B17E10228201 (Period: 69841278fs)
+2018-12-14 15:58:03 - Attempting to retrieve the root directory of the data partition.
+2018-12-14 15:58:05 - Found 5 handles that supported SimpleFileSystem
+2018-12-14 15:58:05 - Checking handle 0 (C80DEF98)
+2018-12-14 15:58:05 - Handle is own partition
+2018-12-14 15:58:05 - Checking handle 1 (C80DE798)
+2018-12-14 15:58:05 - HD node found: MBR type(2), Signature type(2), Part #(2), Start LBA(514048), Num Sectors(509919)
+2018-12-14 15:58:05 - Self node: MBR type(2), Signature type(2), Part #(1), Start LBA(2048), Num Sectors(509953)
+2018-12-14 15:58:05 - Checking handle 2 (C7423B98)
+2018-12-14 15:58:06 - Checking handle 3 (C7423B18)
+2018-12-14 15:58:06 - Checking handle 4 (C7414A98)
+2018-12-14 15:58:06 - Disabling watchdog timer (Result: Success)
+2018-12-14 15:58:06 - Could not find Simple Network protocol.
+2018-12-14 15:58:06 - =============================================
+2018-12-14 15:58:06 - MemTest86 V8.0 Free Build: 1000 (64-bit)
+2018-12-14 15:58:06 - =============================================
+2018-12-14 15:58:06 - SMBIOS BIOS INFO Vendor: "American Megatrends Inc.", Version: "4207", Release Date: "12/07/2018"
+2018-12-14 15:58:06 - SMBIOS SYSTEM INFO Manufacturer: "System manufacturer", Product: "System Product Name", Version: "System Version", S/N: "System Serial Number", SKU: "", Family: ""
+2018-12-14 15:58:06 - SMBIOS: Found SMBIOS BaseboardInformation (pbLinAddr=0xE6C27, FormattedLen=15, iTotalLen=117)
+2018-12-14 15:58:06 - SMBIOS BASEBOARD INFO Manufacturer: "ASUSTeK COMPUTER INC.", Product: "ROG STRIX B350-F GAMING", Version: "Rev X.0x", S/N: "180119092103886", AssetTag: "Default string", LocationInChassis: "Default string"
+2018-12-14 15:58:06 - EFI Specifications: 2.60
+2018-12-14 15:58:06 - Found blacklist file
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Mac-F42C88C8" (BIOS: "", FLAGS: 1) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Mac-F4238CC8" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Mac-27ADBB7B4CEE8E61" (BIOS: "", FLAGS: 20) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "80AF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z97MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z170MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z170X-Gaming 3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z170X-Gaming 7" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z170X-Gaming GT" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:06 - [BLACKLIST] Adding "Z170X-UD3-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:07 - [BLACKLIST] Adding "Z170-HD3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:07 - [BLACKLIST] Adding "990FXA-UD3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:07 - [BLACKLIST] Adding "970A-DS3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:07 - [BLACKLIST] Adding "X99-Ultra Gaming-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "M5A97 R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "M5A97 EVO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "M5A99FX PRO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-A" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-A/USB 3.1" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-A II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-A" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "Sabertooth X99" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "SABERTOOTH 990FX R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "STRIX X99 GAMING" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-DELUXE" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X99-DELUXE II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "RAMPAGE V EXTREME" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "MAXIMUS VIII RANGER" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "Z10PE-D8 WS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X9DRW" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X9DRW-3LN4F+/X9DRW-3TF+" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X9SRL-F" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "X9DRD-iF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "151-BE-E097" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "131-HE-E095-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "151-HE-E999-KR" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:08 - [BLACKLIST] Adding "PRIME B350-PLUS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "PRIME X370-PRO" (BIOS: "", FLAGS: 4) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "CROSSHAIR VI HERO" (BIOS: "1602", FLAGS: 4) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "ROG STRIX X370-F GAMING" (BIOS: "4012", FLAGS: 4) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "OEMSH Product" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "LNVNB161216" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:58:09 - [BLACKLIST] Adding "GA-990FX-GAMING" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:10 - [BLACKLIST] Adding "X399 SLI PLUS (MS-7B09)" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:58:10 - [BLACKLIST] 44 boards added to blacklist
+2018-12-14 15:58:10 - Console Control protocol workaround enabled
+2018-12-14 15:58:10 - Number of console modes: 4
+2018-12-14 15:58:10 - Mode 0: 80 x 25
+2018-12-14 15:58:10 - Mode 1: 80 x 50
+2018-12-14 15:58:10 - Mode 2: 100 x 31
+2018-12-14 15:58:10 - Mode 3: 320 x 56
+2018-12-14 15:58:10 - Initializing localization strings
+2018-12-14 15:58:10 - Language en-US is supported
+2018-12-14 15:58:10 - Language fr-FR is supported
+2018-12-14 15:58:10 - Language it-IT is supported
+2018-12-14 15:58:10 - Language es-AR is supported
+2018-12-14 15:58:10 - GetGlyph failed for character 0x00C3 (Warning Unknown Glyph)
+2018-12-14 15:58:10 - Language pt-BR is not supported
+2018-12-14 15:58:10 - Language ca-ES is supported
+2018-12-14 15:58:10 - Language de-DE is supported
+2018-12-14 15:58:10 - GetGlyph failed for character 0x010C (Warning Unknown Glyph)
+2018-12-14 15:58:10 - Language cs-CZ is not supported
+2018-12-14 15:58:10 - GetGlyph failed for character 0x0104 (Warning Unknown Glyph)
+2018-12-14 15:58:10 - Language pl-PL is not supported
+2018-12-14 15:58:11 - Language ru-RU is supported
+2018-12-14 15:58:11 - GetGlyph failed for character 0x3041 (Warning Unknown Glyph)
+2018-12-14 15:58:11 - Language ja-JP is not supported
+2018-12-14 15:58:11 - GetGlyph failed for character 0x4E0F (Warning Unknown Glyph)
+2018-12-14 15:58:11 - Language zh-CN is not supported
+2018-12-14 15:58:11 - GetGlyph failed for character 0xF944 (Warning Unknown Glyph)
+2018-12-14 15:58:11 - Language zh-HK is not supported
+2018-12-14 15:58:11 - Font does not support all languages. Installing unicode font...
+2018-12-14 15:58:11 - InitFont - Font header version: 1.1
+2018-12-14 15:58:12 - InitFont - Number of narrow glyphs: 6969
+2018-12-14 15:58:12 - InitFont - Number of wide glyphs: 50117
+2018-12-14 15:58:12 - Language en-US is supported
+2018-12-14 15:58:12 - Language fr-FR is supported
+2018-12-14 15:58:12 - Language it-IT is supported
+2018-12-14 15:58:12 - Language es-AR is supported
+2018-12-14 15:58:12 - Language pt-BR is supported
+2018-12-14 15:58:12 - Language ca-ES is supported
+2018-12-14 15:58:12 - Language de-DE is supported
+2018-12-14 15:58:12 - Language cs-CZ is supported
+2018-12-14 15:58:12 - Language pl-PL is supported
+2018-12-14 15:58:12 - Language ru-RU is supported
+2018-12-14 15:58:12 - Language ja-JP is supported
+2018-12-14 15:58:12 - Language zh-CN is supported
+2018-12-14 15:58:12 - Language zh-HK is supported
+2018-12-14 15:58:13 - iMS support is NOT available
+2018-12-14 15:58:13 - Initializing screen for graphics
+2018-12-14 15:58:13 - Number of graphics modes: 5
+2018-12-14 15:58:13 - Mode 0: 640 x 480
+2018-12-14 15:58:13 - Mode 1: 800 x 600
+2018-12-14 15:58:13 - Mode 2: 1024 x 768
+2018-12-14 15:58:13 - Mode 3: 1280 x 1024
+2018-12-14 15:58:14 - Mode 4: 2560 x 1080
+2018-12-14 15:58:14 - Getting CPUID
+2018-12-14 15:58:14 - Getting cache size
+2018-12-14 15:58:14 - get_cache_size - Vendor ID: AuthenticAMD Brand ID: AMD Ryzen 7 1700X Eight-Core Processor         
+2018-12-14 15:58:14 - CPU CorePPack: 16 (0x0000400F)
+2018-12-14 15:58:14 - L1 instruction cache size: 16 x 32KB
+2018-12-14 15:58:14 - L1 data cache size: 16 x 64KB
+2018-12-14 15:58:14 - L2 cache size: 16 x 512KB
+2018-12-14 15:58:14 - L3 cache size: 1 x 16384KB
+2018-12-14 15:58:14 - Measuring CPU/cache/mem speed
+2018-12-14 15:58:14 - hpet_init - Found RSDP. Version: 2 
+2018-12-14 15:58:14 - hpet_init - Found XSDT. Entry Count: 16
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: FACP  Version: 6
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: APIC  Version: 3
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: FPDT  Version: 1
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: FIDT  Version: 1
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:58:14 - hpet_init - Found ACPI table: SSDT  Version: 2
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: CRAT  Version: 1
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: CDIT  Version: 1
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: SSDT  Version: 1
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: MCFG  Version: 1
+2018-12-14 15:58:15 - hpet_init - Found ACPI table: HPET  Version: 1
+2018-12-14 15:58:15 - hpet_init - HPET base address: 0xFED00000
+2018-12-14 15:58:15 - hpet_init - HPET gen cap: 0x429B17E10228201 (Period: 69841278fs)
+2018-12-14 15:58:15 - hpet_init - HPET gen cfg: 0x1
+2018-12-14 15:58:15 - hpet_init - main counter value (1): 380965254
+2018-12-14 15:58:15 - hpet_init - main counter value (2): 381485122
+2018-12-14 15:58:15 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:58:16 - cpuspeed_hpet - HPET counter start: 382528036, HPET counter end: 383243945
+2018-12-14 15:58:16 - cpuspeed_hpet - start TSC: 133968748467, end TSC: 134158279251 (difference: 189530784)
+2018-12-14 15:58:16 - cpu_cache_speed - (Attempt 1) clock cycle (ms): 3790615
+2018-12-14 15:58:16 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:58:16 - cpuspeed_hpet - HPET counter start: 385331352, HPET counter end: 386047261
+2018-12-14 15:58:16 - cpuspeed_hpet - start TSC: 134710900444, end TSC: 134900439343 (difference: 189538899)
+2018-12-14 15:58:16 - cpu_cache_speed - (Attempt 2) clock cycle (ms): 3790777
+2018-12-14 15:58:16 - cpuspeed_hpet - rdtsc instruction supported: 1
+2018-12-14 15:58:16 - cpuspeed_hpet - HPET counter start: 388129553, HPET counter end: 388845462
+2018-12-14 15:58:16 - cpuspeed_hpet - start TSC: 135452357744, end TSC: 135641901287 (difference: 189543543)
+2018-12-14 15:58:16 - cpu_cache_speed - (Attempt 3) clock cycle (ms): 3790870
+2018-12-14 15:58:16 - cpu_cache_speed - Using average of last 3 samples (3790870, 3790777, 3790615)
+2018-12-14 15:58:16 - cpu_cache_speed - CPU speed: 3790.7MHz
+2018-12-14 15:58:17 - cpu_cache_speed - measuring L1 cache speed at 0xC7DD4000 (64 KB)
+2018-12-14 15:58:17 - cpu_cache_speed - L1 cache speed: 83722 MB/s
+2018-12-14 15:58:17 - cpu_cache_speed - measuring L2 cache speed at 0xC7D64000 (512 KB)
+2018-12-14 15:58:17 - cpu_cache_speed - L2 cache speed: 69074 MB/s
+2018-12-14 15:58:17 - cpu_cache_speed - measuring L3 cache speed at 0xC3C3D000 (16384 KB)
+2018-12-14 15:58:17 - cpu_cache_speed - L3 cache speed: 26188 MB/s
+2018-12-14 15:58:17 - get_mem_speed - measuring mem speed at 0xBC77D000 (135936 KB)
+2018-12-14 15:58:18 - get_mem_speed - mem speed: 14497 MB/s
+2018-12-14 15:58:20 - cpu_cache_speed - Memory latency: 81.698 ns
+2018-12-14 15:58:21 - Retrieving CPU MSR data
+2018-12-14 15:58:21 - GetAMDFamilyMSRInfo - CPU AMD Ryzen 7 1700X Eight-Core Processor         : 17h.1h
+2018-12-14 15:58:21 - IsAMDTurboCoreSupported - CPUID[0x80000007][EDX] = 00006599
+2018-12-14 15:58:21 - HWCR register found. CPB enable/disable functionality supported
+2018-12-14 15:58:21 - CPB is: disabled
+2018-12-14 15:58:21 - GetAMDFamilyMSRInfo - MSR[0xC0010292] = 0000000100000052
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR Max Pstates/#boosted states: 8, -1
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010064] = 8000000048880897
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[0] = 37750
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010065] = 80000000478B0878
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 120
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[1] = 30000
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010066] = 80000000459A0C84
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 12, CPUFid_P = 132
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[2] = 22000
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010067] = 0000000000000000
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[3] = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010068] = 0000000000000000
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[4] = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C0010069] = 0000000000000000
+2018-12-14 15:58:22 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - Multiplier_P[5] = 0
+2018-12-14 15:58:22 - GetAMDFamilyMSRInfo - MSR[C001006A] = 0000000000000000
+2018-12-14 15:58:23 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:58:23 - GetAMDFamilyMSRInfo - Multiplier_P[6] = 0
+2018-12-14 15:58:23 - GetAMDFamilyMSRInfo - MSR[C001006B] = 0000000000000000
+2018-12-14 15:58:23 - GetAMDMult - CPUDid_P = 0, CPUFid_P = 0
+2018-12-14 15:58:23 - GetAMDFamilyMSRInfo - Multiplier_P[7] = 0
+2018-12-14 15:58:23 - EnableAMDCPB - MSR[0xC0010015] = 000000000B000011
+2018-12-14 15:58:23 - EnableAMDCPB - New MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:58:23 - AMD MSR enable CPD: MSR[00000000C0010062] = 0x0000000000000000
+2018-12-14 15:58:24 - AMD Set PStateCtl: 0x0000000000000000
+2018-12-14 15:58:24 - Get_MPERF_APERF - CPUID[0x6][ECX] = 00000001
+2018-12-14 15:58:24 - Get_MPERF_APERF - high perf counter freq = 3790754000
+2018-12-14 15:58:25 - MSR 0xC0010293: 0000000000480897
+2018-12-14 15:58:26 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:58:26 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:58:26 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:58:26 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:58:26 - Get_MPERF_APERF - time in ns = 1204005
+2018-12-14 15:58:26 - Get_MPERF_APERF - FreqMPERF in KHz = 3791696, FreqAPERF in KHz = 3791166
+2018-12-14 15:58:28 - MSR 0xC0010293: 0000000000480897
+2018-12-14 15:58:29 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:58:29 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:58:29 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:58:29 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:58:29 - Get_MPERF_APERF - time in ns = 1216742
+2018-12-14 15:58:29 - Get_MPERF_APERF - FreqMPERF in KHz = 3791282, FreqAPERF in KHz = 3790948
+2018-12-14 15:58:34 - MSR 0xC0010293: 0000000000480897
+2018-12-14 15:58:35 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:58:35 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:58:36 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:58:36 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:58:36 - Get_MPERF_APERF - time in ns = 1225913
+2018-12-14 15:58:36 - Get_MPERF_APERF - FreqMPERF in KHz = 3791280, FreqAPERF in KHz = 3790968
+2018-12-14 15:58:36 - GetAMDFamilyMSRInfo - APERF = 3791166, MPERF = 3791696, Mult = 37750
+2018-12-14 15:58:37 - GetAMDFamilyMSRInfo - BaseClock = 10042
+2018-12-14 15:58:37 - GetAMDFamilyMSRInfo - Turbo Core supported
+2018-12-14 15:58:37 - DisableAMDCPB - MSR[0xC0010015] = 0000000009000011
+2018-12-14 15:58:37 - DisableAMDCPB - New MSR[0xC0010015] = 000000000B000011
+2018-12-14 15:58:37 - AMD MSR disable CPD: MSR[00000000C0010062] = 0x0000000000000000
+2018-12-14 15:58:37 - AMD Set PStateCtl: 0x0000000000000000
+2018-12-14 15:58:37 - Get_MPERF_APERF - CPUID[0x6][ECX] = 00000001
+2018-12-14 15:58:37 - Get_MPERF_APERF - high perf counter freq = 3790754000
+2018-12-14 15:58:38 - MSR 0xC0010293: 0000000000480897
+2018-12-14 15:58:39 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:58:39 - MSR 0xC0010063: 0000000000000001
+2018-12-14 15:58:39 - MSR 0xC0010062: 0000000000000000
+2018-12-14 15:58:39 - MSR 0xC0010061: 0000000000000020 (CurPState=0, MaxPState=2)
+2018-12-14 15:58:39 - Get_MPERF_APERF - time in ns = 1201983
+2018-12-14 15:58:39 - Get_MPERF_APERF - FreqMPERF in KHz = 3791289, FreqAPERF in KHz = 3790966
+2018-12-14 15:58:40 - MSR 0xC0010293: 0000000000480897
+2018-12-14 15:58:41 - GetAMDMult - CPUDid_P = 8, CPUFid_P = 151
+2018-12-14 15:59:05 - Attempting to retrieve the root directory of the data partition.
+2018-12-14 15:59:06 - Found 5 handles that supported SimpleFileSystem
+2018-12-14 15:59:06 - Checking handle 0 (C80E3F98)
+2018-12-14 15:59:06 - Handle is own partition
+2018-12-14 15:59:06 - Checking handle 1 (C80E3718)
+2018-12-14 15:59:06 - HD node found: MBR type(2), Signature type(2), Part #(2), Start LBA(514048), Num Sectors(509919)
+2018-12-14 15:59:06 - Self node: MBR type(2), Signature type(2), Part #(1), Start LBA(2048), Num Sectors(509953)
+2018-12-14 15:59:06 - Checking handle 2 (C7423F98)
+2018-12-14 15:59:07 - Checking handle 3 (C7423818)
+2018-12-14 15:59:07 - Checking handle 4 (C7414A18)
+2018-12-14 15:59:07 - Disabling watchdog timer (Result: Success)
+2018-12-14 15:59:07 - Could not find Simple Network protocol.
+2018-12-14 15:59:08 - =============================================
+2018-12-14 15:59:08 - MemTest86 V8.0 Free Build: 1000 (64-bit)
+2018-12-14 15:59:08 - =============================================
+2018-12-14 15:59:08 - SMBIOS BIOS INFO Vendor: "American Megatrends Inc.", Version: "4207", Release Date: "12/07/2018"
+2018-12-14 15:59:08 - SMBIOS SYSTEM INFO Manufacturer: "System manufacturer", Product: "System Product Name", Version: "System Version", S/N: "System Serial Number", SKU: "", Family: ""
+2018-12-14 15:59:08 - SMBIOS: Found SMBIOS BaseboardInformation (pbLinAddr=0xE6C27, FormattedLen=15, iTotalLen=117)
+2018-12-14 15:59:08 - SMBIOS BASEBOARD INFO Manufacturer: "ASUSTeK COMPUTER INC.", Product: "ROG STRIX B350-F GAMING", Version: "Rev X.0x", S/N: "180119092103886", AssetTag: "Default string", LocationInChassis: "Default string"
+2018-12-14 15:59:08 - EFI Specifications: 2.60
+2018-12-14 15:59:08 - Found blacklist file
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Mac-F42C88C8" (BIOS: "", FLAGS: 1) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Mac-F4238CC8" (BIOS: "", FLAGS: 8) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Mac-27ADBB7B4CEE8E61" (BIOS: "", FLAGS: 20) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "80AF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z97MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170MX-Gaming 5" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170X-Gaming 3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170X-Gaming 7" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170X-Gaming GT" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170X-UD3-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "Z170-HD3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "990FXA-UD3" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:08 - [BLACKLIST] Adding "970A-DS3P" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "X99-Ultra Gaming-CF" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "M5A97 R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "M5A97 EVO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "M5A99FX PRO R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "X99-A" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "X99-A/USB 3.1" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:59:09 - [BLACKLIST] Adding "X99-A II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "X99-A" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "Sabertooth X99" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "SABERTOOTH 990FX R2.0" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "STRIX X99 GAMING" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "X99-DELUXE" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "X99-DELUXE II" (BIOS: "1701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "RAMPAGE V EXTREME" (BIOS: "3701", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "MAXIMUS VIII RANGER" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "Z10PE-D8 WS" (BIOS: "", FLAGS: 2) to blacklist
+2018-12-14 15:59:10 - [BLACKLIST] Adding "X9DRW" (BIOS: "", FLAGS: 2) to blacklist

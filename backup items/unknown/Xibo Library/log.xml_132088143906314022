@@ -1,0 +1,2 @@
+﻿<trace date="2019-07-28 15:06:27" category="Error"><logdate>2019-07-28 15:06:27</logdate><thread>LibraryAgent</thread><method>LibraryAgent - Run</method><message>Exception in Run: Could not find file &apos;C:\Users\PhillyMosque-Prime\Documents\Xibo Library\requiredFiles.xml&apos;.</message>
+</trace>

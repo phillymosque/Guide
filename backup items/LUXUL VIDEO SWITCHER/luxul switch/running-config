@@ -1,0 +1,570 @@
+username admin privilege 15 password encrypted YWRtaW4=
+!
+vlan 1
+!
+vlan 10
+ name JAP_18x24
+!
+vlan 11
+ name TX_1_gi1/2
+!
+vlan 12
+ name TX_2_gi1/3
+!
+vlan 13
+ name TX_3_gi1/4
+!
+vlan 14
+ name TX_4_gi1/5
+!
+vlan 15
+ name TX_5_gi1/6
+!
+vlan 16
+ name TX_6_gi1/7
+!
+vlan 17
+ name TX_7_gi1/8
+!
+vlan 18
+ name TX_8_gi1/9
+!
+vlan 19
+ name TX_9_gi1/10
+!
+vlan 20
+ name TX_10_gi1/11
+!
+vlan 21
+ name TX_11_gi1/12
+!
+vlan 22
+ name TX_12_gi1/13
+!
+vlan 23
+ name TX_13_gi1/14
+!
+vlan 24
+ name TX_14_gi1/15
+!
+vlan 25
+ name TX_15_gi1/16
+!
+vlan 26
+ name TX_16_gi1/17
+!
+vlan 27
+ name TX_17_gi1/18
+!
+vlan 28
+ name TX_18_gi1/19
+!
+!
+!
+ip routing
+ip route 0.0.0.0 0.0.0.0 192.168.1.1
+ip route 0.0.0.0 0.0.0.0 192.168.1.2
+spanning-tree mst name a4-13-4e-75-4c-37 revision 0
+poe management mode class-consumption
+voice vlan oui 00-01-E3 description Siemens AG phones
+voice vlan oui 00-03-6B description Cisco phones
+voice vlan oui 00-0F-E2 description H3C phones
+voice vlan oui 00-60-B9 description Philips and NEC AG phones
+voice vlan oui 00-D0-1E description Pingtel phones
+voice vlan oui 00-E0-75 description Polycom phones
+voice vlan oui 00-E0-BB description 3Com phones
+!
+interface GigabitEthernet 1/1
+ poe mode plus
+!
+interface GigabitEthernet 1/2
+ switchport access vlan 11
+ switchport hybrid native vlan 11
+ switchport hybrid allowed vlan 10,11
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/3
+ switchport access vlan 12
+ switchport hybrid native vlan 12
+ switchport hybrid allowed vlan 10,12
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/4
+ switchport access vlan 13
+ switchport hybrid native vlan 13
+ switchport hybrid allowed vlan 10,13
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/5
+ switchport access vlan 14
+ switchport hybrid native vlan 14
+ switchport hybrid allowed vlan 10,14
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/6
+ switchport access vlan 15
+ switchport hybrid native vlan 15
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/7
+ switchport access vlan 16
+ switchport hybrid native vlan 16
+ switchport hybrid allowed vlan 10,16
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/8
+ switchport access vlan 17
+ switchport hybrid native vlan 17
+ switchport hybrid allowed vlan 10,17
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/9
+ switchport access vlan 18
+ switchport hybrid native vlan 18
+ switchport hybrid allowed vlan 10,18
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/10
+ switchport access vlan 19
+ switchport hybrid native vlan 19
+ switchport hybrid allowed vlan 10,19
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/11
+ switchport access vlan 20
+ switchport hybrid native vlan 20
+ switchport hybrid allowed vlan 10,20
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/12
+ switchport access vlan 21
+ switchport hybrid native vlan 21
+ switchport hybrid allowed vlan 10,21
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/13
+ switchport access vlan 22
+ switchport hybrid native vlan 22
+ switchport hybrid allowed vlan 10,22
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/14
+ switchport access vlan 23
+ switchport hybrid native vlan 23
+ switchport hybrid allowed vlan 10,23
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/15
+ switchport access vlan 24
+ switchport hybrid native vlan 24
+ switchport hybrid allowed vlan 10,24
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/16
+ switchport access vlan 25
+ switchport hybrid native vlan 25
+ switchport hybrid allowed vlan 10,25
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/17
+ switchport access vlan 26
+ switchport hybrid native vlan 26
+ switchport hybrid allowed vlan 10,26
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/18
+ switchport access vlan 27
+ switchport hybrid native vlan 27
+ switchport hybrid allowed vlan 10,27
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/19
+ switchport access vlan 28
+ switchport hybrid native vlan 28
+ switchport hybrid allowed vlan 10,28
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/20
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/21
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/22
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/23
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/24
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/25
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/26
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/27
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/28
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/29
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/30
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/31
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/32
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/33
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/34
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/35
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/36
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/37
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/38
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/39
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/40
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/41
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/42
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/43
+ switchport hybrid native vlan 10
+ switchport hybrid allowed vlan 10,15
+ switchport hybrid egress-tag none
+ switchport hybrid port-type unaware
+ switchport mode hybrid
+ poe mode plus
+!
+interface GigabitEthernet 1/44
+ poe mode plus
+!
+interface GigabitEthernet 1/45
+ poe mode plus
+!
+interface GigabitEthernet 1/46
+ poe mode plus
+!
+interface GigabitEthernet 1/47
+ poe mode plus
+!
+interface GigabitEthernet 1/48
+ poe mode plus
+!
+interface GigabitEthernet 1/49
+ poe mode plus
+!
+interface GigabitEthernet 1/50
+ poe mode plus
+!
+interface GigabitEthernet 1/51
+ poe mode plus
+!
+interface GigabitEthernet 1/52
+ poe mode plus
+!
+interface vlan 1
+ ip address 192.168.1.200 255.255.254.0
+!
+interface vlan 10
+ ip address 10.128.0.1 255.128.0.0
+!
+interface vlan 11
+ ip address 10.0.0.1 255.255.255.252
+!
+interface vlan 12
+ ip address 10.0.0.5 255.255.255.252
+!
+interface vlan 13
+ ip address 10.0.0.9 255.255.255.252
+!
+interface vlan 14
+ ip address 10.0.0.13 255.255.255.252
+!
+interface vlan 15
+ ip address 10.0.0.17 255.255.255.252
+!
+interface vlan 16
+ ip address 10.0.0.21 255.255.255.252
+!
+interface vlan 17
+ ip address 10.0.0.25 255.255.255.252
+!
+interface vlan 18
+ ip address 10.0.0.29 255.255.255.252
+!
+interface vlan 19
+ ip address 10.0.0.33 255.255.255.252
+!
+interface vlan 20
+ ip address 10.0.0.37 255.255.255.252
+!
+interface vlan 21
+ ip address 10.0.0.41 255.255.255.252
+!
+interface vlan 22
+ ip address 10.0.0.45 255.255.255.252
+!
+interface vlan 23
+ ip address 10.0.0.49 255.255.255.252
+!
+interface vlan 24
+ ip address 10.0.0.53 255.255.255.252
+!
+interface vlan 25
+ ip address 10.0.0.57 255.255.255.252
+!
+interface vlan 26
+ ip address 10.0.0.61 255.255.255.252
+!
+interface vlan 27
+ ip address 10.0.0.65 255.255.255.252
+!
+interface vlan 28
+ ip address 10.0.0.69 255.255.255.252
+!
+!
+spanning-tree aggregation
+ spanning-tree link-type point-to-point
+!
+!
+line console 0
+ length 0
+ width 0
+!
+line vty 0
+ length 0
+ width 512
+!
+line vty 1
+ length 0
+ width 0
+!
+line vty 2
+ length 0
+ width 0
+!
+line vty 3
+ length 0
+ width 0
+!
+line vty 4
+!
+line vty 5
+!
+line vty 6
+!
+line vty 7
+!
+line vty 8
+!
+line vty 9
+!
+line vty 10
+!
+line vty 11
+!
+line vty 12
+!
+line vty 13
+!
+line vty 14
+!
+line vty 15
+!
+end
