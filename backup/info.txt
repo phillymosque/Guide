@@ -1,0 +1,20 @@
+UpdraftPlus Backup/Restore, this was used to backup our site:
+# Backup Info - Jan 11, 2025
+
+## Database
+- Size: 31.83 MB
+
+## Plugins
+- Downloaded Size: 65,536 KB out of 76,654 KB
+
+## Themes
+- Size: 28.59 MB
+
+## Uploads
+- Size: 185.68 MB
+
+## MU-Plugins
+- Size: 602.10 KB
+
+## Others
+- Size: 6.56 KB
