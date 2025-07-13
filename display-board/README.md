@@ -1,122 +1,73 @@
-# Raspberry Pi TV Slideshow Setup (Google Drive + feh)
+# 📺 Auto-Updating TV Display Slideshow
 
-This guide automates a Raspberry Pi to sync images from a specific Google Drive folder and display them in a fullscreen slideshow using `feh`.
+This setup automatically displays photos on a screen connected to a Raspberry Pi by syncing from a specific Google Drive folder. It updates every few minutes, adding or removing photos as needed.
 
----
+## 🗂️ Google Drive Folder
 
-## 🧰 Requirements
+All slideshow content comes from this shared Google Drive folder:
 
-- Raspberry Pi OS with desktop environment
-- `feh` installed
-- `rclone` configured with Google Drive
-- Valid folder ID from Google Drive (read-only access is fine)
+**Folder Link:** [TV Display Slides](https://drive.google.com/drive/u/2/folders/1kaEBIHKSJzDsT7oU51lDW922jzYBacAr)
 
----
+## ⚙️ Components
 
-## 📂 Google Drive Setup
+* **Device**: Raspberry Pi
+* **Slideshow viewer**: `feh`
+* **Drive sync tool**: `rclone`
+* **Scheduler**: `cron`
 
-1. Identify the Drive folder you want to sync.
-2. Copy its ID from the URL. Example:
-   ```
-   https://drive.google.com/drive/u/0/folders/1kaEBIHKSJzDsT7oU51lDW922jzYBacAr
-   Folder ID: 1kaEBIHKSJzDsT7oU51lDW922jzYBacAr
-   ```
+## 🔁 Sync Behavior
 
----
+* New photos added to the Drive folder will appear on the screen.
+* Photos removed from Drive will be deleted from the slideshow.
+* The sync and slideshow restart happen on a timed loop (every 5 minutes).
 
-## 🔗 rclone Configuration
+## 🧪 Cron Jobs
 
-Run:
+Two cron jobs are scheduled under the `pi` user:
 
-```bash
-rclone config
+```cron
+*/1 * * * * /usr/bin/rclone sync gdrive: /home/pi/Pictures/ --delete-during >> /home/pi/rclone.log 2>&1
+*/5 * * * * /home/pi/feh-refresh-loop.sh >> /home/pi/feh-refresh.log 2>&1
 ```
 
-- Choose `n` for new remote → Name: `gdrive`
-- Storage: `drive`
-- Scope: `drive.readonly`
-- Leave client ID/secret blank
-- When done, edit the config file:
+## 📜 feh-refresh-loop.sh
 
-```bash
-nano ~/.config/rclone/rclone.conf
-```
-
-Add:
-
-```ini
-root_folder_id = 1kaEBIHKSJzDsT7oU51lDW922jzYBacAr
-```
-
----
-
-## 🔁 Sync Folder Every 5 Minutes
-
-Edit crontab:
-
-```bash
-crontab -e
-```
-
-Add:
-
-```bash
-*/5 * * * * /usr/bin/rclone sync gdrive: /home/pi/Pictures/ --delete-during >> /home/pi/rclone.log 2>&1
-```
-
----
-
-## 🖼️ Slideshow Script
-
-Create:
-
-```bash
-nano /home/pi/run-feh-slideshow.sh
-```
-
-Paste:
+Located at `/home/pi/feh-refresh-loop.sh`
 
 ```bash
 #!/bin/bash
-export DISPLAY=:0
+export DISPLAY=:0.0
+export XAUTHORITY=/home/pi/.Xauthority
+
+# Kill existing slideshow
+echo "[$(date)] Starting slideshow script" >> /home/pi/feh-refresh.log
 pkill feh
-feh --fullscreen --hide-pointer --slideshow-delay 10 --force-aliasing --auto-rotate --zoom max --scale-down /home/pi/Pictures
+sleep 1
+
+# Start new slideshow
+echo "[$(date)] Launching feh..." >> /home/pi/feh-refresh.log
+nohup feh --fullscreen --hide-pointer --slideshow-delay 10 --force-aliasing --auto-rotate --zoom max --scale-down /home/pi/Pictures > /dev/null 2>&1 &
 ```
 
-Make executable:
+## ✅ Access Permissions
 
-```bash
-chmod +x /home/pi/run-feh-slideshow.sh
-```
+Currently, only the following individuals can upload/edit slideshow content:
+
+* **Sadr Sahib**
+* **General Secretary**
+* **Vice President**
+
+More people can be authorized on request with appropriate approvals.
+
+## 🧼 Logs
+
+* `/home/pi/rclone.log` – Drive sync logs
+* `/home/pi/feh-refresh.log` – Slideshow startup logs
+
+## 🔄 On Boot Setup
+
+To ensure slideshow starts after reboot, consider placing a `.desktop` entry in `~/.config/autostart/` to launch `feh-refresh-loop.sh`.
 
 ---
 
-## 🔁 Restart Slideshow Every Minute
-
-Edit crontab:
-
-```bash
-crontab -e
-```
-
-Add:
-
-```bash
-*/1 * * * * /home/pi/run-feh-slideshow.sh >> /home/pi/slideshow.log 2>&1
-```
-
----
-
-## ✅ Result
-
-- `/home/pi/Pictures/` syncs from Google Drive every 5 minutes.
-- `feh` is restarted every minute to load the latest images.
-- Slideshow is shown fullscreen without user interaction.
-
----
-
-## 📌 Notes
-
-- The Pi must be logged into a GUI session for `DISPLAY=:0` to work.
-- Make sure the `Pictures` folder contains valid image files (e.g. `.jpg`, `.png`).
-- You can modify slideshow delay by adjusting the `--slideshow-delay` flag in the script.
+This system keeps your display content fresh and simple for anyone to manage via Google Drive.
