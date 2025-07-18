@@ -17,7 +17,7 @@ All slideshow content is managed through this shared Google Drive folder:
 - **Device**: Raspberry Pi  
 - **Slideshow Viewer**: `feh`  
 - **Drive Sync Tool**: `rclone`  
-- **Startup Mechanism**: Desktop autostart using a `.desktop` file that launches a looping script on login
+- **Startup Mechanism**: LXDE desktop session autostart file, which launches a persistent looping script once the GUI session is fully initialized
 
 ---
 
@@ -59,17 +59,15 @@ done
 
 ## 🚀 Startup on Boot
 
-The slideshow starts automatically when the Pi boots into its desktop environment using this autostart file:
+The slideshow script is launched automatically at boot using the LXDE session-level autostart file:
 
-**Path:** `/home/pi/.config/autostart/slideshow.desktop`
+**Path:** `/etc/xdg/lxsession/LXDE-pi/autostart`
 
-```ini
-[Desktop Entry]
-Type=Application
-Name=Slideshow
-Exec=/home/pi/feh-refresh-loop.sh
-X-GNOME-Autostart-enabled=true
+```text
+@bash /home/pi/feh-refresh-loop.sh
 ```
+
+This method ensures the script runs **after the desktop environment is fully initialized**, allowing `feh` to access the GUI reliably.
 
 ---
 
