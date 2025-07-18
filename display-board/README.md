@@ -13,7 +13,7 @@ All slideshow content comes from this shared Google Drive folder:
 * **Device**: Raspberry Pi
 * **Slideshow viewer**: `feh`
 * **Drive sync tool**: `rclone`
-* **Scheduler**: `cron`
+* **Scheduler**: `cron` #  its a desktop process, not cron, it runs on startup
 
 ## 🔁 Sync Behavior
 
