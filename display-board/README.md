@@ -1,73 +1,95 @@
 # 📺 Auto-Updating TV Display Slideshow
 
-This setup automatically displays photos on a screen connected to a Raspberry Pi by syncing from a specific Google Drive folder. It updates every few minutes, adding or removing photos as needed.
+This setup automatically displays photos on a TV connected to a Raspberry Pi. It continuously syncs from a shared Google Drive folder and updates the screen content every few minutes.
+
+---
 
 ## 🗂️ Google Drive Folder
 
-All slideshow content comes from this shared Google Drive folder:
+All slideshow content is managed through this shared Google Drive folder:
 
 **Folder Link:** [TV Display Slides](https://drive.google.com/drive/u/2/folders/1kaEBIHKSJzDsT7oU51lDW922jzYBacAr)
 
+---
+
 ## ⚙️ Components
 
-* **Device**: Raspberry Pi
-* **Slideshow viewer**: `feh`
-* **Drive sync tool**: `rclone`
-* **Scheduler**: `cron` #  its a desktop process, not cron, it runs on startup
+- **Device**: Raspberry Pi  
+- **Slideshow Viewer**: `feh`  
+- **Drive Sync Tool**: `rclone`  
+- **Startup Mechanism**: Desktop autostart using a `.desktop` file that launches a looping script on login
+
+---
 
 ## 🔁 Sync Behavior
 
-* New photos added to the Drive folder will appear on the screen.
-* Photos removed from Drive will be deleted from the slideshow.
-* The sync and slideshow restart happen on a timed loop (every 5 minutes).
+- New photos added to the Drive folder appear on the TV within minutes  
+- Photos removed from Drive are also removed from the screen  
+- The system runs a **persistent loop** that:  
+  - Syncs from Google Drive  
+  - Refreshes the slideshow  
+  - Waits 5 minutes and repeats
 
-## 🧪 Cron Jobs
+---
 
-Two cron jobs are scheduled under the `pi` user:
+## 📜 `feh-refresh-loop.sh`
 
-```cron
-*/1 * * * * /usr/bin/rclone sync gdrive: /home/pi/Pictures/ --delete-during >> /home/pi/rclone.log 2>&1
-*/5 * * * * /home/pi/feh-refresh-loop.sh >> /home/pi/feh-refresh.log 2>&1
-```
-
-## 📜 feh-refresh-loop.sh
-
-Located at `/home/pi/feh-refresh-loop.sh`
+Located at: `/home/pi/feh-refresh-loop.sh`
 
 ```bash
 #!/bin/bash
 export DISPLAY=:0.0
 export XAUTHORITY=/home/pi/.Xauthority
 
-# Kill existing slideshow
-echo "[$(date)] Starting slideshow script" >> /home/pi/feh-refresh.log
-pkill feh
-sleep 1
+LOGFILE="/home/pi/feh-refresh.log"
 
-# Start new slideshow
-echo "[$(date)] Launching feh..." >> /home/pi/feh-refresh.log
-nohup feh --fullscreen --hide-pointer --slideshow-delay 10 --force-aliasing --auto-rotate --zoom max --scale-down /home/pi/Pictures > /dev/null 2>&1 &
+while true; do
+    echo "[$(date)] Killing feh..." >> "$LOGFILE"
+    pkill feh
+    sleep 1
+
+    echo "[$(date)] Starting feh slideshow..." >> "$LOGFILE"
+    nohup /usr/bin/feh --fullscreen --hide-pointer --slideshow-delay 10 --force-aliasing --auto-rotate --zoom max --scale-down /home/pi/Pictures > /dev/null 2>&1 &
+
+    sleep 300
+done
 ```
-
-## ✅ Access Permissions
-
-Currently, only the following individuals can upload/edit slideshow content:
-
-* **Sadr Sahib**
-* **General Secretary**
-* **Vice President**
-
-More people can be authorized on request with appropriate approvals.
-
-## 🧼 Logs
-
-* `/home/pi/rclone.log` – Drive sync logs
-* `/home/pi/feh-refresh.log` – Slideshow startup logs
-
-## 🔄 On Boot Setup
-
-To ensure slideshow starts after reboot, consider placing a `.desktop` entry in `~/.config/autostart/` to launch `feh-refresh-loop.sh`.
 
 ---
 
-This system keeps your display content fresh and simple for anyone to manage via Google Drive.
+## 🚀 Startup on Boot
+
+The slideshow starts automatically when the Pi boots into its desktop environment using this autostart file:
+
+**Path:** `/home/pi/.config/autostart/slideshow.desktop`
+
+```ini
+[Desktop Entry]
+Type=Application
+Name=Slideshow
+Exec=/home/pi/feh-refresh-loop.sh
+X-GNOME-Autostart-enabled=true
+```
+
+---
+
+## ✅ Access Permissions
+
+The following individuals currently have permission to upload or manage slideshow content:
+
+- **Sadr Sahib**
+- **General Secretary**
+- **Vice President**
+
+More users can be added with approval.
+
+---
+
+## 🧼 Logs
+
+- `/home/pi/feh-refresh.log` – Slideshow loop activity  
+- Optionally, rclone sync logs can be added if `rclone` output is logged in future
+
+---
+
+This system provides a reliable, self-updating visual display with no need for manual maintenance or periodic restarts. It is designed to run indefinitely until shutdown or power loss, and it will **automatically resume on reboot**.
