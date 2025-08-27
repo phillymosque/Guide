@@ -91,3 +91,43 @@ More users can be added with approval.
 ---
 
 This system provides a reliable, self-updating visual display with no need for manual maintenance or periodic restarts. It is designed to run indefinitely until shutdown or power loss, and it will **automatically resume on reboot**.
+
+# 🕛 Daily Reboot Timer (Systemd)
+
+A **systemd service + timer pair** was created to automatically reboot the Raspberry Pi every night at **12:00 AM**. This ensures the slideshow system starts fresh daily and reduces the chance of `feh` or `rclone` hanging indefinitely.  
+
+## Files  
+### /etc/systemd/system/daily-reboot.service  
+[Unit]  
+Description=Daily automatic reboot  
+
+[Service]  
+Type=oneshot  
+ExecStart=/sbin/reboot  
+
+### /etc/systemd/system/daily-reboot.timer  
+[Unit]  
+Description=Run daily-reboot.service at midnight  
+
+[Timer]  
+OnCalendar=*-*-* 00:00:00  
+Persistent=true  
+
+[Install]  
+WantedBy=timers.target  
+
+## Behavior  
+- The timer triggers `daily-reboot.service` every day at **00:00:00**.  
+- `Persistent=true` ensures the reboot still happens if the Pi was offline at midnight (it runs on next boot).  
+- Verified with:  
+  `systemctl list-timers daily-reboot.timer`  
+
+## Manual Testing  
+To trigger the service immediately:  
+`sudo systemctl start daily-reboot.service`  
+
+After the first scheduled reboot, confirmation can be checked with:  
+`journalctl -u daily-reboot.service --since "yesterday"`  
+
+✅ This guarantees the Pi reboots every midnight, keeping the display system stable, reliable, and self-healing.
+
