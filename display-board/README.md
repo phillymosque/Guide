@@ -51,7 +51,7 @@ while true; do
     echo "[$(date)] Starting feh slideshow..." >> "$LOGFILE"
     nohup /usr/bin/feh --fullscreen --hide-pointer --slideshow-delay 10 --force-aliasing --auto-rotate --zoom max --scale-down /home/pi/Pictures > /dev/null 2>&1 &
 
-    sleep 300
+    sleep 1800
 done
 ```
 
