@@ -292,6 +292,7 @@ echo "[$(date -Is)] === RUN END ==="
 # Install required packages
 sudo apt update
 sudo apt install -y rclone poppler-utils
+sudo apt install jq
 
 # Copy script
 sudo nano /home/pi/gdrive-pdf-to-jpg.sh
