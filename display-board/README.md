@@ -166,14 +166,15 @@ This setup automatically converts any PDF uploaded to the **TV Display Slides** 
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Force rclone to use the pi user's config even under sudo
+export RCLONE_CONFIG="/home/pi/.config/rclone/rclone.conf"
+
 # ===== CONFIG =====
-# Your gdrive remote is locked to the "TV Display Slides" folder via root_folder_id.
-# So gdrive: means "that folder", no extra path needed.
-REMOTE_RO="gdrive:"              # read (same remote, scoped to folder ID)
-REMOTE_RW="gdrive:"              # write (same remote)
-ARCHIVE_PREFIX="Converted"       # PDFs moved here on Drive
-JPEG_QUALITY="85"                # 1..100
-CONCURRENCY="4"                  # parallel uploads
+REMOTE_RO="gdrive:"              # scoped to TV Display Slides via root_folder_id
+REMOTE_RW="gdrive:"              # same remote, now RW
+ARCHIVE_PREFIX="Converted"       # PDFs moved here after success
+JPEG_QUALITY="85"
+CONCURRENCY="4"
 
 LOG="/home/pi/gdrive-pdf-to-jpg.log"
 TMPDIR="$(mktemp -d)"
@@ -182,10 +183,10 @@ trap 'rm -rf "$TMPDIR"' EXIT
 exec >>"$LOG" 2>&1
 echo "[$(date -Is)] === RUN START ==="
 
-# Ensure archive root exists (no-op if already there)
+# Ensure archive root exists
 rclone mkdir "$REMOTE_RW/$ARCHIVE_PREFIX" >/dev/null 2>&1 || true
 
-# List PDFs (case-insensitive) recursively under the Drive root
+# Find PDFs (case-insensitive)
 mapfile -t pdfs < <(rclone lsf -R --files-only --include "{*.pdf,*.PDF}" "$REMOTE_RO" || true)
 
 if [ ${#pdfs[@]} -eq 0 ]; then
@@ -197,25 +198,29 @@ fi
 echo "[$(date -Is)] Found ${#pdfs[@]} PDF(s)."
 
 for relpath in "${pdfs[@]}"; do
-  # Skip anything already archived
+  # ignore anything already inside Converted/
   if [[ "$relpath" == "$ARCHIVE_PREFIX/"* ]]; then
     continue
   fi
 
   echo "[$(date -Is)] Processing: $relpath"
 
-  workdir="$TMPDIR/work/$(dirname "$relpath")"
-  mkdir -p "$workdir"
-
+  # Split path
+  subdir="$(dirname "$relpath")"
+  if [[ "$subdir" == "." ]]; then subdir=""; fi
   filename="$(basename "$relpath")"
   stem="${filename%.*}"
-  local_pdf="$workdir/$filename"
 
-  # Quick skip: if first page JPG already exists in the target folder, assume converted
-  if rclone lsf "$REMOTE_RO/$(dirname "$relpath")" --include "${stem}-1.jpg" | grep -q .; then
-    echo "[$(date -Is)] Skipping (already converted): $relpath"
+  # ✅ Skip only if PDF already archived
+  if rclone lsf "$REMOTE_RO/$ARCHIVE_PREFIX/${subdir:+$subdir/}" --include "$filename" | grep -q .; then
+    echo "[$(date -Is)] Skipping (already archived): $relpath"
     continue
   fi
+
+  # Workspace
+  workdir="$TMPDIR/work/${subdir:-ROOT}"
+  mkdir -p "$workdir"
+  local_pdf="$workdir/$filename"
 
   # 1) Download PDF
   if ! rclone copyto "$REMOTE_RO/$relpath" "$local_pdf" -P; then
@@ -223,33 +228,32 @@ for relpath in "${pdfs[@]}"; do
     continue
   fi
 
-  # 2) Convert to JPG(s)
-  # Produces: stem-1.jpg, stem-2.jpg, ...
+  # 2) Convert -> stem-1.jpg, stem-2.jpg, ...
   if ! pdftoppm "$local_pdf" "$workdir/$stem" -jpeg -jpegopt quality=$JPEG_QUALITY; then
     echo "[$(date -Is)] WARN: conversion failed: $relpath"
     continue
   fi
 
-  # 3) Upload JPG(s) to the SAME Drive folder; skip ones that already exist
-  if ! rclone copy "$workdir" "$REMOTE_RW/$(dirname "$relpath")" \
+  # 3) Upload JPG(s) back to the SAME folder; skip ones already there
+  target="$REMOTE_RW/${subdir:+$subdir/}"
+  if ! rclone copy "$workdir" "$target" \
         --include "${stem}-*.jpg" -P --transfers "$CONCURRENCY" --ignore-existing; then
     echo "[$(date -Is)] WARN: JPG upload failed: $relpath"
     continue
   fi
 
-  # 4) Move original PDF to Converted/<same relative path>
-  dest="$REMOTE_RW/$ARCHIVE_PREFIX/$relpath"
-  destdir="$(dirname "$dest")"
-  rclone mkdir "$destdir" >/dev/null 2>&1 || true
-
-  if ! rclone moveto "$REMOTE_RW/$relpath" "$dest"; then
+  # 4) Move original PDF to Converted/<same structure>
+  dest="$REMOTE_RW/$ARCHIVE_PREFIX/${subdir:+$subdir/}$filename"
+  rclone mkdir "$(dirname "$dest")" >/dev/null 2>&1 || true
+  if ! rclone moveto "$REMOTE_RW/${subdir:+$subdir/}$filename" "$dest"; then
     echo "[$(date -Is)] WARN: archive move failed (PDF left in place): $relpath"
   else
-    echo "[$(date -Is)] Archived to: $ARCHIVE_PREFIX/$relpath"
+    echo "[$(date -Is)] Archived: $relpath -> $ARCHIVE_PREFIX/${subdir:+$subdir/}$filename"
   fi
 done
 
 echo "[$(date -Is)] === RUN END ==="
+
 
 ```
 
