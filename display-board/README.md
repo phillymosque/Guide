@@ -129,5 +129,116 @@ To trigger the service immediately:
 After the first scheduled reboot, confirmation can be checked with:  
 `journalctl -u daily-reboot.service --since "yesterday"`  
 
+
+# Google Drive PDF → JPG Converter for TV Display Slides
+
+This setup automatically converts any PDF uploaded to the **TV Display Slides** Google Drive folder into JPG images, places the JPGs back in the same folder, and archives the original PDF into a `Converted/` subfolder. It runs entirely on the Raspberry Pi, using `rclone` and `pdftoppm`.
+
+---
+
+## How It Works
+
+1. **rclone remote (`gdrive`)**  
+   - Configured with scope = `drive` (full access).  
+   - Locked to the **TV Display Slides** folder via `root_folder_id = 1kaEBIHKSJzDsT7oU51lDW922jzYBacAr`.  
+   - So `gdrive:` points directly to this folder.
+
+2. **Script: `/home/pi/gdrive-pdf-to-jpg.sh`**
+   - Lists all PDFs under `gdrive:`.
+   - Downloads each PDF to a temp folder.
+   - Converts to JPG(s) with `pdftoppm` (naming: `file-1.jpg`, `file-2.jpg`, etc).
+   - Uploads JPGs to the same folder where the PDF was found (skips if JPGs already exist).
+   - Moves the original PDF into `gdrive:/Converted/...` (mirrors the same subfolder structure).
+   - Logs activity to `/home/pi/gdrive-pdf-to-jpg.log`.
+
+3. **Systemd Service/Timer**
+   - `gdrive-pdf-to-jpg.service`: runs the script once.
+   - `gdrive-pdf-to-jpg.timer`: schedules the service.
+     - Runs **30 seconds after boot**.
+     - Then **every 15 minutes** continuously.
+     - With `Persistent=true`, so missed runs during downtime execute on next boot.
+
+---
+
+## Installation
+
+```bash
+# Install required packages
+sudo apt update
+sudo apt install -y rclone poppler-utils
+
+# Copy script
+sudo nano /home/pi/gdrive-pdf-to-jpg.sh
+# (paste the script, save)
+
+# Make executable
+chmod +x /home/pi/gdrive-pdf-to-jpg.sh
+
+
+Systemd Unit Files
+
+/etc/systemd/system/gdrive-pdf-to-jpg.service
+
+[Unit]
+Description=Convert Drive PDFs to JPGs and archive originals
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=pi
+ExecStart=/home/pi/gdrive-pdf-to-jpg.sh
+
+
+/etc/systemd/system/gdrive-pdf-to-jpg.timer
+
+[Unit]
+Description=Run Drive PDF->JPG every 15 minutes
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
+Enable and Start
+sudo systemctl daemon-reload
+sudo systemctl enable --now gdrive-pdf-to-jpg.timer
+
+Monitoring
+
+Check scheduled runs:
+
+systemctl list-timers | grep gdrive-pdf-to-jpg
+
+
+View logs:
+
+journalctl -u gdrive-pdf-to-jpg.service -n 50 --no-pager
+
+
+Tail script log:
+
+tail -f /home/pi/gdrive-pdf-to-jpg.log
+
+Behavior Summary
+
+On boot: runs once after 30s.
+
+Every 15 minutes: checks for new PDFs.
+
+PDFs are converted to JPG(s) in place.
+
+Originals are archived under Converted/.
+
+JPGs never get reprocessed.
+
+Feh slideshow loop remains unaffected (this runs separately).
+
+
+Would you like me to also generate the `.service` and `.timer` files as standalone t
+
 ✅ This guarantees the Pi reboots every midnight, keeping the display system stable, reliable, and self-healing.
 
