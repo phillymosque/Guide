@@ -166,13 +166,13 @@ This setup automatically converts any PDF uploaded to the **TV Display Slides** 
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Force rclone to use the pi user's config even under sudo
+# Use pi's rclone config even when run with sudo
 export RCLONE_CONFIG="/home/pi/.config/rclone/rclone.conf"
 
 # ===== CONFIG =====
-REMOTE_RO="gdrive:"              # scoped to TV Display Slides via root_folder_id
-REMOTE_RW="gdrive:"              # same remote, now RW
-ARCHIVE_PREFIX="Converted"       # PDFs moved here after success
+REMOTE_RO="gdrive:" # scoped to TV Display Slides via root_folder_id
+REMOTE_RW="gdrive:" # same remote, RW
+ARCHIVE_PREFIX="Converted" # PDFs moved here after success
 JPEG_QUALITY="85"
 CONCURRENCY="4"
 
@@ -181,37 +181,51 @@ TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
 
 exec >>"$LOG" 2>&1
-echo "[$(date -Is)] === RUN START ==="
+echo "[$(date -Is)] === RUN START (MIME-detect) ==="
+
+# Ensure tools exist
+need() { command -v "$1" >/dev/null 2>&1 || { echo "[$(date -Is)] ERROR: $1 not found"; exit 1; }; }
+need rclone
+need pdftoppm
+need jq
 
 # Ensure archive root exists
 rclone mkdir "$REMOTE_RW/$ARCHIVE_PREFIX" >/dev/null 2>&1 || true
 
-# Find PDFs (case-insensitive)
-mapfile -t pdfs < <(rclone lsf -R --files-only --include "{*.pdf,*.PDF}" "$REMOTE_RO" || true)
+# Find PDFs by MIME type (extension-agnostic)
+# Produces relative paths like: "events/flyer" or "test" (no extension required)
+
+mapfile -t pdfs < <(
+  rclone lsjson "$REMOTE_RO" -R \
+  | jq -r '.[] | select(.IsDir==false and .MimeType=="application/pdf") | .Path'
+)
 
 if [ ${#pdfs[@]} -eq 0 ]; then
-  echo "[$(date -Is)] No PDFs found. Done."
+  echo "[$(date -Is)] No PDFs found by MIME type. Done."
   echo "[$(date -Is)] === RUN END ==="
   exit 0
 fi
 
-echo "[$(date -Is)] Found ${#pdfs[@]} PDF(s)."
+echo "[$(date -Is)] Found ${#pdfs[@]} PDF(s) by MIME."
 
 for relpath in "${pdfs[@]}"; do
-  # ignore anything already inside Converted/
+  # Skip anything already inside Converted/
   if [[ "$relpath" == "$ARCHIVE_PREFIX/"* ]]; then
     continue
   fi
 
   echo "[$(date -Is)] Processing: $relpath"
 
-  # Split path
+  # Split into folder + filename; normalize '.' to ''
   subdir="$(dirname "$relpath")"
-  if [[ "$subdir" == "." ]]; then subdir=""; fi
+  [[ "$subdir" == "." ]] && subdir=""
   filename="$(basename "$relpath")"
-  stem="${filename%.*}"
 
-  # ✅ Skip only if PDF already archived
+  # Decide stem (base name without .pdf if present)
+  stem="$filename"
+  [[ "$stem" == *.pdf ]] || [[ "$stem" == *.PDF ]] && stem="${stem%.*}"
+
+  # ✅ Skip only if PDF already archived (safer than looking for JPGs)
   if rclone lsf "$REMOTE_RO/$ARCHIVE_PREFIX/${subdir:+$subdir/}" --include "$filename" | grep -q .; then
     echo "[$(date -Is)] Skipping (already archived): $relpath"
     continue
@@ -220,9 +234,9 @@ for relpath in "${pdfs[@]}"; do
   # Workspace
   workdir="$TMPDIR/work/${subdir:-ROOT}"
   mkdir -p "$workdir"
-  local_pdf="$workdir/$filename"
+  local_pdf="$workdir/$filename.pdf" # ensure local has .pdf extension for tools
 
-  # 1) Download PDF
+  # 1) Download PDF (copyto handles both with/without extension)
   if ! rclone copyto "$REMOTE_RO/$relpath" "$local_pdf" -P; then
     echo "[$(date -Is)] WARN: download failed: $relpath"
     continue
@@ -234,7 +248,7 @@ for relpath in "${pdfs[@]}"; do
     continue
   fi
 
-  # 3) Upload JPG(s) back to the SAME folder; skip ones already there
+  # 3) Upload JPG(s) back to the SAME Drive folder; skip ones already there
   target="$REMOTE_RW/${subdir:+$subdir/}"
   if ! rclone copy "$workdir" "$target" \
         --include "${stem}-*.jpg" -P --transfers "$CONCURRENCY" --ignore-existing; then
@@ -243,9 +257,24 @@ for relpath in "${pdfs[@]}"; do
   fi
 
   # 4) Move original PDF to Converted/<same structure>
+  # If the original on Drive has no .pdf extension, we must use the exact same path for moveto.
+  # We'll compute the exact remote source path by checking for both with and without .pdf.
+  src_exact="$REMOTE_RW/${subdir:+$subdir/}$filename"
+  if ! rclone lsf "$REMOTE_RO/${subdir:+$subdir/}" --include "$filename" | grep -q .; then
+    # try filename.pdf if plain name isn't present
+    if rclone lsf "$REMOTE_RO/${subdir:+$subdir/}" --include "$filename.pdf" | grep -q .; then
+      src_exact="$REMOTE_RW/${subdir:+$subdir/}$filename.pdf"
+      filename="$filename.pdf"
+    elif rclone lsf "$REMOTE_RO/${subdir:+$subdir/}" --include "$filename.PDF" | grep -q .; then
+      src_exact="$REMOTE_RW/${subdir:+$subdir/}$filename.PDF"
+      filename="$filename.PDF"
+    fi
+  fi
+
   dest="$REMOTE_RW/$ARCHIVE_PREFIX/${subdir:+$subdir/}$filename"
   rclone mkdir "$(dirname "$dest")" >/dev/null 2>&1 || true
-  if ! rclone moveto "$REMOTE_RW/${subdir:+$subdir/}$filename" "$dest"; then
+
+  if ! rclone moveto "$src_exact" "$dest"; then
     echo "[$(date -Is)] WARN: archive move failed (PDF left in place): $relpath"
   else
     echo "[$(date -Is)] Archived: $relpath -> $ARCHIVE_PREFIX/${subdir:+$subdir/}$filename"
