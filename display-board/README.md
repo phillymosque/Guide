@@ -160,6 +160,99 @@ This setup automatically converts any PDF uploaded to the **TV Display Slides** 
 
 ---
 
+## Script
+
+```
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ===== CONFIG =====
+# Your gdrive remote is locked to the "TV Display Slides" folder via root_folder_id.
+# So gdrive: means "that folder", no extra path needed.
+REMOTE_RO="gdrive:"              # read (same remote, scoped to folder ID)
+REMOTE_RW="gdrive:"              # write (same remote)
+ARCHIVE_PREFIX="Converted"       # PDFs moved here on Drive
+JPEG_QUALITY="85"                # 1..100
+CONCURRENCY="4"                  # parallel uploads
+
+LOG="/home/pi/gdrive-pdf-to-jpg.log"
+TMPDIR="$(mktemp -d)"
+trap 'rm -rf "$TMPDIR"' EXIT
+
+exec >>"$LOG" 2>&1
+echo "[$(date -Is)] === RUN START ==="
+
+# Ensure archive root exists (no-op if already there)
+rclone mkdir "$REMOTE_RW/$ARCHIVE_PREFIX" >/dev/null 2>&1 || true
+
+# List PDFs (case-insensitive) recursively under the Drive root
+mapfile -t pdfs < <(rclone lsf -R --files-only --include "{*.pdf,*.PDF}" "$REMOTE_RO" || true)
+
+if [ ${#pdfs[@]} -eq 0 ]; then
+  echo "[$(date -Is)] No PDFs found. Done."
+  echo "[$(date -Is)] === RUN END ==="
+  exit 0
+fi
+
+echo "[$(date -Is)] Found ${#pdfs[@]} PDF(s)."
+
+for relpath in "${pdfs[@]}"; do
+  # Skip anything already archived
+  if [[ "$relpath" == "$ARCHIVE_PREFIX/"* ]]; then
+    continue
+  fi
+
+  echo "[$(date -Is)] Processing: $relpath"
+
+  workdir="$TMPDIR/work/$(dirname "$relpath")"
+  mkdir -p "$workdir"
+
+  filename="$(basename "$relpath")"
+  stem="${filename%.*}"
+  local_pdf="$workdir/$filename"
+
+  # Quick skip: if first page JPG already exists in the target folder, assume converted
+  if rclone lsf "$REMOTE_RO/$(dirname "$relpath")" --include "${stem}-1.jpg" | grep -q .; then
+    echo "[$(date -Is)] Skipping (already converted): $relpath"
+    continue
+  fi
+
+  # 1) Download PDF
+  if ! rclone copyto "$REMOTE_RO/$relpath" "$local_pdf" -P; then
+    echo "[$(date -Is)] WARN: download failed: $relpath"
+    continue
+  fi
+
+  # 2) Convert to JPG(s)
+  # Produces: stem-1.jpg, stem-2.jpg, ...
+  if ! pdftoppm "$local_pdf" "$workdir/$stem" -jpeg -jpegopt quality=$JPEG_QUALITY; then
+    echo "[$(date -Is)] WARN: conversion failed: $relpath"
+    continue
+  fi
+
+  # 3) Upload JPG(s) to the SAME Drive folder; skip ones that already exist
+  if ! rclone copy "$workdir" "$REMOTE_RW/$(dirname "$relpath")" \
+        --include "${stem}-*.jpg" -P --transfers "$CONCURRENCY" --ignore-existing; then
+    echo "[$(date -Is)] WARN: JPG upload failed: $relpath"
+    continue
+  fi
+
+  # 4) Move original PDF to Converted/<same relative path>
+  dest="$REMOTE_RW/$ARCHIVE_PREFIX/$relpath"
+  destdir="$(dirname "$dest")"
+  rclone mkdir "$destdir" >/dev/null 2>&1 || true
+
+  if ! rclone moveto "$REMOTE_RW/$relpath" "$dest"; then
+    echo "[$(date -Is)] WARN: archive move failed (PDF left in place): $relpath"
+  else
+    echo "[$(date -Is)] Archived to: $ARCHIVE_PREFIX/$relpath"
+  fi
+done
+
+echo "[$(date -Is)] === RUN END ==="
+
+```
+
 ## Installation
 
 ```bash
