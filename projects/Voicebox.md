@@ -121,3 +121,31 @@ reboot-weekly.timer   (enabled)  — runs every Thu at 11:00 PM
 
 ✅ **Summary**:  
 Voicebox is fully configured to **loop announcements on Fridays** during Jumu’ah time with automatic **weekly reboots**, and all services/timers are persistent across reboots with proper DST handling.  
+
+
+## 7. Device Access Information
+```text
+Hostname: voicebox
+Password: soma1234
+Default Wi-Fi Connection: preconfigured (home network), with auto-connect priority set lower than "PhillyMosque Admin"
+```
+
+## 8. Manual Audio Playback
+- Default announcements directory:  
+  `/home/voicebox/announcements/`  
+
+- Play MP3 manually:  
+  ```bash
+  mpg123 /home/voicebox/announcements/testsample.mp3
+  ```
+
+- Play WAV manually:  
+  ```bash
+  aplay /home/voicebox/announcements/yourfile.wav
+  ```
+
+- Stop playback (if running):  
+  ```bash
+  pkill -f mpg123
+  pkill -f aplay
+  ```
