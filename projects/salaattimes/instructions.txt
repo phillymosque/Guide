@@ -1,0 +1,20 @@
+d /home/pi/salaattimes
+
+# one-time if not done:
+# sudo apt-get update
+# sudo apt-get install -y python3 python3-pip wkhtmltopdf
+# python3 -m pip install --user pandas
+
+# current week only
+python3 generate_flyers.py
+
+# OR: all weeks from the CSV
+python3 generate_flyers.py --all-weeks
+
+#backup to local 
+scp -r pi@192.168.0.14:/home/pi/salaattimes "C:\Users\PhillyMosque-Prime\Downloads\salaattimes_backup"
+
+
+
+
+
