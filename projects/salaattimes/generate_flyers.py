@@ -58,22 +58,19 @@ def render_html_to_png(html_path: Path, png_path: Path):
 
 
 def build_html_for_week(week_df: pd.DataFrame, start: date, end: date) -> str:
-    """Build HTML for one Friday–Thursday week."""
-    rows_html = []
-    for _, r in week_df.sort_values("d_date").iterrows():
-        day_name = r["d_date"].strftime("%a")
-        rows_html.append(
-            "<tr>"
-            f"<td>{day_name}</td>"
-            f"<td>{to_ampm(r['fajr_jamah'])}</td>"
-            f"<td>{to_ampm(r['zuhr_jamah'])}</td>"
-            f"<td>{to_ampm(r['asr_jamah'])}</td>"
-            f"<td>{to_ampm(r['maghrib_jamah'])}</td>"
-            f"<td>{to_ampm(r['isha_jamah'])}</td>"
-            "</tr>"
-        )
+    """
+    Build HTML for one Friday–Thursday week, using a single set of
+    jamā‘at times (assumed constant through the week).
+    """
+    # Take the first row of the week as the representative times
+    r = week_df.sort_values("d_date").iloc[0]
 
-    rows_block = "\n      ".join(rows_html)
+    fajr_time    = to_ampm(r["fajr_jamah"])
+    zuhr_time    = to_ampm(r["zuhr_jamah"])
+    asr_time     = to_ampm(r["asr_jamah"])
+    maghrib_time = to_ampm(r["maghrib_jamah"])
+    isha_time    = to_ampm(r["isha_jamah"])
+
     date_range_text = f"{fmt_header_date(start)} – {fmt_header_date(end)}"
 
     html = f"""<!DOCTYPE html>
@@ -124,7 +121,7 @@ def build_html_for_week(week_df: pd.DataFrame, start: date, end: date) -> str:
   table {{
     width: 100%;
     border-collapse: collapse;
-    font-size: 22px;
+    font-size: 48px;
     color: #2f4f2f;
     background: transparent;
     margin-top: 8px;
@@ -148,14 +145,14 @@ def build_html_for_week(week_df: pd.DataFrame, start: date, end: date) -> str:
     <div class="range">{date_range_text}</div>
     <table>
       <tr>
-        <th>Day</th>
-        <th>Fajr</th>
-        <th>Zuhr</th>
-        <th>Asr</th>
-        <th>Maghrib</th>
-        <th>Isha</th>
+        <th>Salaat</th>
+        <th>Time</th>
       </tr>
-      {rows_block}
+      <tr><td>Fajr</td><td>{fajr_time}</td></tr>
+      <tr><td>Zuhr</td><td>{zuhr_time}</td></tr>
+      <tr><td>Asr</td><td>{asr_time}</td></tr>
+      <tr><td>Maghrib</td><td>{maghrib_time}</td></tr>
+      <tr><td>Isha</td><td>{isha_time}</td></tr>
     </table>
   </div>
 </div>
@@ -196,6 +193,7 @@ def main():
 
     def friday_starts():
         cur = min_date
+        # advance to first Friday
         while cur.weekday() != 4:
             cur += timedelta(days=1)
             if cur > max_date:
@@ -211,6 +209,7 @@ def main():
             end = min(start + timedelta(days=6), max_date)
             targets.append((start, end))
     else:
+        # Current week = last Friday <= today
         past = [d for d in df["d_date"] if d <= today]
         if past:
             fridays = [d for d in past if d.weekday() == 4]
