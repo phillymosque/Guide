@@ -45,7 +45,7 @@ After=network.target sound.target
 User=voicebox
 WorkingDirectory=/home/voicebox/announcements
 ExecStart=/bin/bash /home/voicebox/announcements/friday_loop.sh
-Restart=always
+Restart=no
 RuntimeMaxSec=1h30min
 ```
 
@@ -67,7 +67,7 @@ Description=Run Friday Announcement Loop
 
 [Timer]
 OnCalendar=Fri 12:30
-Persistent=true
+Persistent=false
 AccuracySec=1min
 
 [Install]
