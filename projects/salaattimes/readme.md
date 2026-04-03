@@ -218,3 +218,56 @@ HIGH-LEVEL FLOW
 ====================================================================
 END OF README
 ====================================================================
+
+basic example
+
+# PhillyMosque Salaat Times – Quick Commands
+
+## 1. SSH into Raspberry Pi
+
+ssh pi@192.168.0.14
+
+## 2. Go to project folder
+
+cd /home/pi/salaattimes
+
+## 3. Upload new CSV from Windows (run on Windows CMD)
+
+scp "C:\Users\PhillyMosque-Prime\Documents\salaat_times.csv" pi@192.168.0.14:/home/pi/salaattimes/input/
+
+## 4. Run flyer generation (all weeks)
+
+python3 generate_flyers.py --all-weeks
+
+## 5. Run flyer generation (single week)
+
+python3 generate_flyers.py
+
+## 6. Upload generated flyers to Google Drive
+
+python3 sync_flyers.py
+
+## 7. Full weekly pipeline (manual trigger)
+
+./run_weekly_salaat.sh
+
+## 8. Fix missing data issue (optional)
+
+# Remove rows with missing values
+
+# (edit CSV or add df.dropna() in script)
+
+## 9. Check output files
+
+ls /home/pi/salaattimes/output/
+
+## 10. Check logs (if cron ran)
+
+cat /home/pi/salaattimes/weekly_salaat.log
+
+## DONE
+
+# Flow:
+
+# Upload CSV → Generate → Sync → Display updates automatically
+
